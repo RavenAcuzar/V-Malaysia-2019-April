@@ -5,6 +5,8 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 import { PhotoLibrary } from '@ionic-native/photo-library';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { Crop } from '@ionic-native/crop';
+import { GoogleAnalyticsService } from '../../app/services/analytics.service';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
 
 /**
  * Generated class for the MarkPage page.
@@ -12,7 +14,7 @@ import { Crop } from '@ionic-native/crop';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
+ 
 @Component({
   selector: 'page-mark',
   templateUrl: 'mark.html',
@@ -35,7 +37,12 @@ export class MarkPage {
     private photoLibrary: PhotoLibrary,
     private alert: AlertController,
     private camera: Camera,
-    private crop: Crop) {
+    private crop: Crop,
+    private gaSvc:GoogleAnalyticsService,
+    private androidPermissions:AndroidPermissions) {
+  }
+  ionViewDidLoad() {
+    this.gaSvc.gaTrackPageEnter('VCon Mark Page');
   }
   
   choosePhoto() {
@@ -171,8 +178,11 @@ export class MarkPage {
         content: 'Saving image to gallery...'
       });
       loading.present();
-
-      this.base64ToGallery.base64ToGallery(this.imageData, { prefix: '_img' }).then(libraryItem => {
+      if(this.platform.is('android')){
+      this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.WRITE_EXTERNAL_STORAGE).then(
+        result => {
+      this.androidPermissions.requestPermissions([this.androidPermissions.PERMISSION.WRITE_EXTERNAL_STORAGE]);
+      this.base64ToGallery.base64ToGallery(this.imageData, { prefix: '_img', mediaScanner:true  }).then(libraryItem => {
         loading.dismiss();
 
         let alert = this.alert.create({
@@ -189,9 +199,37 @@ export class MarkPage {
         });
         alert.present();
       }, e => {
-        console.error('Something went wrong!');
+        //console.error(e);
         this.errCallback(e);
       });
+      },
+        error => {
+          this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.WRITE_EXTERNAL_STORAGE)
+          this.errCallback(error);
+        }
+      );
+    }else{
+      this.base64ToGallery.base64ToGallery(this.imageData, { prefix: '_img', mediaScanner:true  }).then(libraryItem => {
+        loading.dismiss();
+
+        let alert = this.alert.create({
+          title: 'Success!',
+          message: 'Your image has been successfully saved to your gallery.',
+          buttons: [{
+            text: 'Share',
+            handler: () => { this.share(libraryItem); }
+          }, {
+            text: 'OK',
+            handler: () => { alert.dismiss(); }
+          }],
+          cssClass: 'alert'
+        });
+        alert.present();
+      }, e => {
+        //console.error(e);
+        this.errCallback(e);
+      });
+    }
     } else if (!this.isImageSelected && !this.isBadgeSelected) {
       let alert = this.alert.create({
         title: 'Oops',
@@ -228,17 +266,17 @@ export class MarkPage {
     }
   }
 
-  private share(libraryItem: string) {
-    let prefix = '';
-    if (this.platform.is('android')) {
-      prefix = 'file://';
-    }
-
-    let filepath = prefix + libraryItem;
-    console.log('Filepath: ' + filepath);
-    this.socialSharing.share('#VCON18', '', filepath).then((a) => {
+  private share(libraryItem: string, direct?:boolean, loading?:any) {
+    let prefix = 'file://';
+      let filepath;
+      if(direct)
+          filepath = libraryItem;
+      else
+        filepath = prefix + libraryItem;
+    this.socialSharing.share('#VMALAYSIA2019', '', filepath).then((a) => {
       console.log(JSON.stringify(a));
       if (a) {
+        loading.dismiss();
         let alert = this.alert.create({
           title: 'Success!',
           message: 'Your image has been successfully shared.',
@@ -250,25 +288,18 @@ export class MarkPage {
         });
         alert.present();
       }
+      else{loading.dismiss();}
     }).catch(e => {
       console.log(JSON.stringify(e));
+      loading.dismiss();
     });
   }
 
   shareDirect(){
     if (this.isImageSelected && this.isBadgeSelected) {
-      let loading = this.loading.create({
-        content: 'Saving image to gallery...'
-      });
+      let loading = this.loading.create();
       loading.present();
-
-      this.base64ToGallery.base64ToGallery(this.imageData, { prefix: '_img' }).then(libraryItem => {
-        loading.dismiss();
-        this.share(libraryItem);
-      }, e => {
-        console.error('Something went wrong!');
-        this.errCallback(e);
-      });
+      this.share(this.imageData, true, loading);
     } else if (!this.isImageSelected && !this.isBadgeSelected) {
       let alert = this.alert.create({
         title: 'Oops',

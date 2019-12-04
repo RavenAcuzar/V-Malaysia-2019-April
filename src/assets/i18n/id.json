@@ -1,61 +1,64 @@
 {
+    "SIDEMENU":{
+        "HOME":"BERANDA",
+        "DAILY_PROG":"JADWAL PROGRAM HARIAN",
+        "NEWS_UPS":"BERITA & PEMBARUAN",
+        "MERCH":"MERCHANDISE V-MALAYSIA 2019",
+        "MARK":"TANDAI V-MALAYSIA 2019 ANDA",
+        "DOWNLOAD":"WALLPAPER V-MALAYSIA 2019 YANG DAPAT DIUNDUH",
+        "FAQS":"TANYA JAWAB",
+        "CONTACT":"HUBUNGI KAMI",
+        "SELECT_LANG":"PILIH BAHASA",
+        "ASK_DATO":"Tanya Dato’",
+        "SURVEY":"Survei Harian",
+        "EXHIBITORS":"EXHIBITOR",
+        "FAVORITES":"FAVORIT",
+        "VMAL_FEED":"V-Malaysia 2019 Feed",
+        "NOTES":"CATATAN"
+    },
     "HOME_PAGE":{
         "DAYS": "HARI",
         "HOURS": "JAM",
         "MINUTES":"MENIT",
         "SECONDS":"DETIK",
         "BTNS":{
-            "btn_1": "KITA ADALAH SATU",
+            "btn_1": "FAVORIT",
             "btn_2_sub": "Buat Tanda",
-            "btn_2": "V-Con Anda",
-            "btn_3_sub": "EKSKLUSIF #VCON18",
+            "btn_2": "V-MALAYSIA 2019 Anda",
+            "btn_3_sub": "EKSKLUSIF V-MALAYSIA 2019",
             "btn_3": "Wallpaper"
         },
-        "NEWS_AND_UPDATES": "BERITA & UPDATES",
-        "WELC": "Selamat datang di V-Malaysia 2018!",
+        "NEWS_AND_UPDATES": "BERITA & PEMBARUAN",
+        "WELC": "Selamat datang di V-Malaysia 2019!",
         "DAY": "HARI"
     },
     "SCHED_PAGE":{
         "TITLE_H": "Jadwal Program Harian",
         "CONTENT_1": "Perhatikan ruang ini untuk jadwal dan update program harian!",
         "CONTENT_2": "Lihat apa yang ada untuk hari ini!",
-        "CONTENT_3": "Pastikan anda berada di tempat acara untuk melihat jadwal program harian."
-    },
-    "ONE_PAGE":{
-        "TITLE": "KITA ADALAH SATU",
-        "CONTENT":{
-            "cnt_1": "Mengenal keluarga ini. Masuk rumah kami. Ikuti panggilan itu.",
-            "cnt_2": "Logo V-Con 2018 yang utama terdiri dari tiga warna berbeda: hijau, biru, dan ungu.",
-            "cnt_3": "Hijau adalah warna alam, energi, dan kehidupan. Hal ini terkait dengan makna pertumbuhan, harmoni, dan lingkungan. Kita diingatkan bahwa Bumi adalah milik kita semua. Kita harus menyayangi, dan menjaganya dengan cara yang telah dipelihara dan mengilhami kita dengan keindahannya selama bertahun-tahun. Ini memicu misi kita untuk menyadari bahwa planet kita adalah satu-satunya rumah kita.",
-            "cnt_4": "Sedangkan warna biru melambangkan kedalaman dan stabilitas. Sebagai sebuah bisnis,  yang telah ada selama 20 tahun, kita telah membuktikan bahwa kita terus bergerak menuju arah kekuatan dan keamanan. The V bekerja dengan kepercayaan, kesetiaan, kebijaksanaan, dan kebenaran sebagai nilai-nilai pendiriannya.",
-            "cnt_5": "Ungu mewujudkan kekuatan, bangsawan, ambisi dan kekayaan. Kita memilih untuk menempuh perjalanan ini karena kita ingin meraih kebebasan finansial, dan pada akhirnya memberikan kembali dengan membantu orang lain.",
-            "cnt_6": "Kata “ONE“ di bagian tengah terdiri dari tiga garis yang mewakili tiga sisi tema tahun ini: One People (Satu Umat). One Planet (Satu Planet). One Purpose (Satu tujuan).",
-            "cnt_7": "Hansief, font yang dipilih berbicara tentang keunikan The V. Ini digambarkan sebagai huruf tebal sans serif yang menampilkan tekstur bagus yang diisi dengan karakter unik.",
-            "cnt_8": "Yang terakhir, gambar “1“ terdiri dari stroke yang berbeda. Serupa dengan sinergi The V, kita berasal dari negara berbeda, dengan sistem kepercayaan dan latar belakang yang berbeda, namun kita bergerak sebagai satu tujuan tunggal, yaitu meningkatkan diri kita sendiri untuk membantu umat manusia.",
-            "cnt_9": "Dalam arti lain, angka “1” juga membangkitkan aspirasi bawaan kita sebagai manusia untuk menjadi bagian dari sesuatu yang besar, dan dalam proses memainkan peran yang telah kita pilih, kita selalu bercita-cita untuk berada di puncak, untuk menjadi yang terbaik dalam apa yang kita lakukan",
-            "cnt_10": "Secara keseluruhan logo V-Malaysia 2018 membangkitkan kesederhanaan dan kecerdasan. Seiring kita mengantisipasi kepulangan pemimpi pada 24-28 April 2018 ini, kita menyambut mereka dengan tangan terbuka dan memperbarui cinta untuk planet ini, penghargaan atas kesatuan kita, dan pengakuan atas satu tujuan kita."
-        }
+        "CONTENT_3": "Pastikan anda berada di tempat acara untuk melihat jadwal program harian.",
+        "THANKS_FOR_PART":"Terima kasih  telah berpartisipasi!"
     },
     "NEWSLANDING_PAGE":{
-        "TITLE": "BERITA & UPDATE",
-        "CONTENT": "BACA. TONTON. TINJAU."
+        "TITLE": "BERITA & PEMBARUAN",
+        "CONTENT": "BACA. TONTON. LIHAT."
     },
     "NEWS_PAGE":{
         "TITLE": "BERITA"
     },
     "MERCH_PAGE":{
-        "CONTENT": "Kunjungi Stan, dan dapatkan barang-barang EXCLUSIVE V-MALAYSIA 2018 ini!",
-        "CONTENT_2": "Perhatikan ruang ini untuk melihat barang-barang dagangan #VCON18 yang mengagumkan yang tersedia secara eksklusif di stan The V di V- Malaysia 2018!"
+        "CONTENT": "Jadilah penarik perhatian dengan koleksi terbaru dari V merchandise yang tersedia secara eksklusif di The V LIMITLESS STORE!",
+        "CONTENT_2": "Tonton ruang ini untuk melihat merchandise V-MALAYSIA 2019 yang luar biasa yang tersedia secara eksklusif di LIMITLESS store."
     },
     "MARK_PAGE":{
-        "TITLE": "Buat Tanda V-Con Anda",
-        "CONTENT":"Cap foto Anda dengan keajaiban V-Con! Cukup upload foto Anda, dan tunggu gambar yang dihasilkan terutama ditandai dengan lencana # VCON18!",
+        "TITLE": "Tandai V-Malaysia 2019 Anda",
+        "CONTENT":"Tandai foto anda dengan lencana khusus V-Malaysia 2019! Cukup unggah foto anda, dan tunggu gambar selesai. Jangan ragu untuk membagikannya dengan keluarga atau teman-teman anda, atau mempostingnya di V-Malaysia 2019 Feed!",
         "BTN_DWN": "Download",
         "BTN_UP": "Unggah Foto"
     },
     "DOWN_PAGE":{
-        "TITLE": "WALLPAPER EKSKLUSIF #VCON18",
-        "CONTENT":"Bawa keajaiban V-Con kemanapun anda pergi dengan wallpaper yang dapat diunduh GRATIS ini untuk perangkat seluler Anda!",
+        "TITLE": "WALLPAPER V-MALAYSIA 2019 EXCLUSIVE",
+        "CONTENT":"Jadikan perangkat ponsel anda lebih menarik dengan wallpaper yang dapat diunduh ini!",
         "BTN":{
             "btn_1": "UNDUH UNTUK ANDROID",
             "btn_2": "UNDUH UNTUK TABLET"
@@ -64,55 +67,71 @@
     "FAQ_PAGE":{
         "TITLE": "Pertanyaan yang Sering Diajukan",
         "QUESTIONS": {
-            "Q1":"Bagaimana cara membeli tiket?",
-            "Q2":"Apa cara pembayaran yang tersedia?",
-            "Q3":"Apa yang perlu Dibawa?",
-            "Q4":"Apa yang perlu saya persiapkan untuk aplikasi visa?",
-            "Q5":"Akankah ada tiket untuk dijual di hari acara itu?",
-            "Q6":"Akankah ada tiket acara satu hari yang tersedia?"
+            "Q1":"Bagaimana cara membeli tiketnya?",
+            "Q7":"Bagaimana cara mendapatkan gelang saya?",
+            "Q2":"Metode pembayaran apa saja yang tersedia?",
+            "Q3":"Apa saja yang perlu dibawa?",
+            "Q4":"Apa yang perlu saya persiapkan untuk permohonan visa?",
+            "Q5":"Apakah ada tiket yang akan dijual di hari acara itu sendiri?",
+            "Q6":"Apakah akan ada tiket acara satu hari?"
         },
         "ANSWERS":{
-            "A1":"Anda bisa membeli tiket V-Malaysia 2018 anda melalui Vshoppe atau di loket yang telah ditunjuk pada saat hari pendaftaran, 23 April 2018.",
-            "A2":"Saat ini, anda bisa membayar dengan uang tunai atau kartu kredit (Visa dan MasterCard).",
+            "A1":"Anda bisa membeli tiket V-Malaysia 2019 anda melalui VShoppe atau di konter yang telah ditentukan selama Hari Pendaftaran, 22 April 2019.",
+            "A7":"Mohon pastikan anda secara pribadi hadir di pendaftaran untuk mendapatkan gelang anda. Pengambilan gelang/tiket melalui perwakilan tidak akan dilayani dan sangat tidak disarankan. Tidak akan ada pengembalian uang, tiket/gelang baru setelah dianggap telah diambil. Anda diminta untuk membeli lagi jika terjadi kehilangan atau penggantian.",
+            "A2":"Untuk saat ini, anda dapat membayar dengan uang tunai atau kartu kredit (Visa dan MasterCard).",
             "A3":{
-                "A3-0":"Pergi ke V-Con? Berikut 5 hal penting yang perlu anda bawa:",
-                "A3-1":"Saat registrasi, bawalah satu (1) kartu identitas yang masih berlaku dan fotokopi surat konfirmasi yang akan dikirimkan kepada anda melalui email tepat setelah pembelian tiket anda.",
-                "A3-2":"Uang saku yang cukup untuk selama 5 hari, yang bisa Anda pakai untuk makanan, minuman, transportasi, barang barang V-Con, souvenir, dll. Pastikan uang anda baik dalam mata uang USD atau MYR.",
-                "A3-3":"Pakaian bagus untuk 5 hari. Pastikan membawa kaos ekstra atau handuk karena ekstra hangat di Penang, Malaysia pada saat ini.",
-                "A3-4":"Bawa kamera Anda untuk membuat kenangan V-Con anda yang berharga, dan bawa sesuatu yang dapat anda tunjukkan kepada keluarga dan calon prospek anda saat pulang nanti.",
-                "A3-5":"Karena Anda ingin menikmati setiap sesi berharga di atas panggung, pastikan membawa pena dan buku catatan anda sendiri untuk beberapa catatan yang serius!"
+                "A3-0":"Berangkat ke V-Malaysia 2019? Berikut ini 5 hal penting yang perlu anda bawa:",
+                "A3-1":"Untuk pendaftaran, bawa satu (1) kartu tanda pengenal dan salinan surat konfirmasi yang akan dikirimkan kepada anda melalui email setelah anda membeli tiket anda. ",
+                "A3-2":"Sediakan anggaran yang cukup untuk uang saku yang akan menopang anda selama 5 hari. Pastikan anda memiliki cukup uang untuk membeli makanan, minuman, transportasi, merchandise V-Malaysia 2019, suvenir, dll. Pastikan uang anda dalam mata uang USD atau RM.",
+                "A3-3":"Pakaian bagus selama 5 hari. Karena cuaca sedang ekstra hangat di Penang, Malaysia sekitar waktu ini, semoga kondisi udara di dalam arena akan menjadi lebih sejuk. Jika anda mudah merasa kedinginan, bawalah jaket atau syal yang dapat dengan mudah anda slempangkan di pakaian nyaman anda.",
+                "A3-4":"Bawa kamera ponsel anda untuk mengabadikan kenangan berharga V-Malaysia 2019 anda. Unggah photo-photo anda di Tandai V-Malaysia 2019 Anda, dan dengan bangga posting semua di V-Malaysia 2019 feed sehingga anda dapat berbagi dengan sesama peserta V-Malaysia 2019 dan ",
+                "A3-5":"Karena anda ingin menikmati setiap sesi berharga di atas panggung, pastikan membuat catatan dengan menggunakan catatan!"
             },
             "A4":{
-                "A4-1":"Paspor berlaku minimal 6 bulan sejak tanggal perjalanan.",
-                "A4-2":"Pastikan paspor anda memiliki minimal 3 halaman kosong.",
-                "A4-3":"Untuk aplikasi VISA, nyatakan visa konvensi.",
-                "A4-4":"Semua peserta harus memiliki uang tunai minimal sebesar USD 500.",
-                "A4-5":"Semua peserta harus sudah memiliki konfirmasi pemesanan hotel."
+                "A4-1":"Paspor masih berlaku minimal 6 bulan dari tanggal perjalanan.",
+                "A4-2":"Pastikan paspor anda harus memiliki minimal 3 halaman kosong.",
+                "A4-3":"Untuk aplikasi VISA, tandai visa konvensi.",
+                "A4-4":"Semua peserta harus memiliki uang tunai minimal sebesar 500 USD.",
+                "A4-5":"Semua peserta harus memiliki konfirmasi pemesanan hotel."
             },
-            "A5":"Ada. Hanya transaksi yang dilakukan dengan uang tunai dan kartu kredit akan diakomodasi.",
-            "A6":"Tidak ada. Program 5 hari yang kami siapkan untuk anda adalah sesuatu yang harus dihadiri dari Hari ke 1 sampai 5 untuk pengalaman mengubah hidup yang lengkap. Ini adalah acara yang saling berhubungan yang luas dan dilengkapi dengan paket aktivitas penuh aksi yang sangat penting untuk bisnis anda."
+            "A5":"Ya. Hanya transaksi yang dilakukan melalui uang tunai dan kartu kredit yang akan dilayani.",
+            "A6":"Tidak. Program 5 hari yang telah kami persiapkan untuk anda adalah sesuatu yang harus di hadiri dari Hari ke 1 hingga Hari ke 5 untuk pengalaman mengubah kehidupan yang lengkap. Ini merupakan acara yang lengkap dan menyeluruh dengan rangkaian kegiatan-kegiatan yang sangat penting untuk bisnis anda."
         }
     },
     "CONT_PAGE":{
         "TITLE":"HUBUNGI KAMI",
-        "CONTENT":"Seandainya anda mengalami masalah dalam mengakses situs kami, atau anda memiliki pertanyaan lebih lanjut yang tidak tersedia di halaman FAQ kami, silakan hubungi kami melalui alamat email berikut.",
+        "CONTENT":"Jika anda mengalami kesulitan mengakses aplikasi, atau anda memiliki pertanyaan lebih lanjut yang tidak tersedia di halaman TANYA JAWAB kami, silakan hubungi kami melalui alamat email berikut ini.",
         "TECH_SUP": "Dukungan teknis:",
-        "CONT_TRAN":"Konten dan Kepentingan Penerjemahan:",
+        "CONT_TRAN":"Menyangkut Isi dan Terjemahan:",
         "INQS": "Untuk pertanyaan:",
         "LTS": "SUKAI, TANDAI, BAGIKAN.",
         "FLLW": "IKUTI KAMI!"
     },
     "CHLANG_PAGE":{
-        "ENGLISH":"INGGRIS",
-        "BAHASA-INDONESIAN": "INDONESIA",
-        "FRENCH":"PRANCIS",
-        "RUSSIAN":"RUSIA",
-        "TURKISH": "TURKI",
-        "ARABIC": "ARAB"  
+        "ENGLISH":"ENGLISH",
+        "BAHASA-INDONESIAN": "BAHASA-INDONESIA", 
+        "FRENCH":"FRANÇAIS",
+        "RUSSIAN":"РУССКИЙ",
+        "TURKISH": "TÜRKÇE", 
+        "ARABIC":"العربية"
     },
     "SPLASH_PAGE":{
-        "ONE": "SATU.",
-        "EXP":"ANDA SUDAH SIAP UNTUK PENGALAMAN SEUMUR HIDUP."
+        "ONE": "Selamat Datang Kembali!",
+        "EXP":"Ketuk, dan lihat perjalanan yang luar biasa di hadapan anda, pemimpi pemberani!"
     },
-    "CHAT_VOLT":"Chat dengan Volt"
+    "SUBMIT_ANSWERS":"Kirim Jawaban",
+    "SURVEY_MSG1":"Tonton ruang ini dan jawab surveinya agar kami bisa melayani Anda dengan lebih baik!",
+    "SURVEY_MSG2":"Terima kasih telah menjawab survei!",
+    "PROMOTION_BY":"Promosi oleh",
+    "FEED":"Isi",
+    "LIKES":"suka",
+    "MERCHANDISE":"Merchandise",
+    "COMMENTS":"komentar",
+    "SHARE_YOUR_THOUGHTS":"Bagikan pendapat anda...",
+    "CREATE_POST":"BUAT POS",
+    "SHARE":"BAGIKAN",
+    "ADD_PHOTOS":"Menambahkan Foto",
+    "PHOTOS_MAX":"(Hingga 3 foto)",
+    "ASKED_BY":"Ditanyakan oleh:",
+    "SEND":"KIRIM"
 }

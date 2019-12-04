@@ -1,0 +1,73 @@
+page-exhibitors {
+    .news-h{
+        h1{
+            top: 0;
+            bottom: 0;
+        }
+    }
+    .news-h::after{
+        margin-top: 0.5vh;
+        height: 14.5vh;
+    }
+    .background-splash{   
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../assets/imgs/super-bg.png");
+        background-size: cover;
+        background-position: center center;
+    }
+    .header-title{
+        letter-spacing: 6px; 
+        width: 100vw; 
+        font-size: 4vh;
+    }
+    .header-title.arabic{
+        letter-spacing: 0 !important;
+    }
+    .no-voting{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 30vw;
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        color: white;
+    }
+    .fave-style{
+        height: 8vw !important;
+            width:8vw !important;
+            span{
+                font-size: 4vw;
+            }
+    }
+    .menuItems.activated{
+        background-color: rgba(255, 255, 255, 0.3) !important;
+    }
+    .menuItems{
+        ion-label{
+            color: white !important;
+        }
+        
+        background-color: transparent !important;
+        ion-radio{
+            .radio-icon{
+                display: none;
+            }
+            
+                .item-cover[aria-checked="true"]{
+                    background-color: rgba(255, 255, 255, 0.3) !important;
+                    
+                }
+        }
+        &.item-block > .item-inner{
+            border-bottom: 0;
+            text-align: center;
+            letter-spacing: 1px;
+            margin-top: 1.5vh;
+            margin-bottom: 1.5vh;
+        }
+    }
+}

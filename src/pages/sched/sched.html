@@ -6,7 +6,7 @@
 -->
 <ion-header no-border>
     <ion-navbar>
-      <button ion-button menuToggle>
+      <button ion-button menuToggle color="secondary">
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-navbar>
@@ -38,7 +38,7 @@
               <p style="text-align: center"><b>{{'SCHED_PAGE.CONTENT_1' | translate }}</b></p>
             </div>
             <div *ngIf="isEventAlreadyFinished">
-              <p style="text-align: center;">Thank you for participating!</p>
+              <p style="text-align: center;">{{'SCHED_PAGE.THANKS_FOR_PART' |translate}}</p>
             </div>
             <div *ngIf="isScheduleShown" class="table">
               <p style="text-align: center;"><b>{{'SCHED_PAGE.CONTENT_2' | translate}}</b></p>

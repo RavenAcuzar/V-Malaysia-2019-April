@@ -4,6 +4,7 @@ import { File } from '@ionic-native/file';
 import { Base64ToGallery } from '@ionic-native/base64-to-gallery';
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
+import { GoogleAnalyticsService } from '../../app/services/analytics.service';
 
 /**
  * Generated class for the DownloadsPage page.
@@ -27,14 +28,16 @@ export class DownloadsPage {
     private fileTransfer: FileTransfer,
     private platform: Platform,
     private alertCtrl: AlertController,
-    private loadingCtrl: LoadingController) {
+    private loadingCtrl: LoadingController,
+    private gaSvc:GoogleAnalyticsService) {
       if (this.platform.is('cordova')) {
         this.downloadLocation = this.file.cacheDirectory;
         this.canDownload = true;
       }
   }
-
+ 
   ionViewDidEnter() {
+    this.gaSvc.gaTrackPageEnter('Download Wallpaper Page');
     if (this.platform.is('android')) {
       return this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.WRITE_EXTERNAL_STORAGE).then(result => {
         if (result.hasPermission) {
@@ -84,11 +87,11 @@ export class DownloadsPage {
   }
 
   downloadMobileWallpaper() {
-    this.download("http://the-v.net/sites/default/files/images/vcon18/VMY2018%20MOBILE.jpg", 'mobile-wallpaper.png');
+    this.download("http://the-v.net/sites/default/files/images/vcon/1080x1920%28WallpaperMobile%29.png", 'mobile-wallpaper.png');
   }
 
   downloadTabletWallpaper() {
-    this.download("http://the-v.net/sites/default/files/images/vcon18/VMY2018%20TABLET2.jpg", 'tablet-wallpaper.png');
+    this.download("http://the-v.net/sites/default/files/images/vcon/2084x2800%28WallpaperTablet%29.png", 'tablet-wallpaper.png');
   }
 
   download(url: string, filename: string) {
@@ -125,7 +128,7 @@ export class DownloadsPage {
             canvas.width = image.width;
 
             context.drawImage(image, 0, 0, image.width, image.height);
-            this.base64ToGallery.base64ToGallery(canvas.toDataURL(), { prefix: '_img' }).then(libraryItem => {
+            this.base64ToGallery.base64ToGallery(canvas.toDataURL(), { prefix: '_img', mediaScanner:true  }).then(libraryItem => {
               loadingPopup.dismiss();
               canvas.remove();
 

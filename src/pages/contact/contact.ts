@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { GoogleAnalyticsService } from '../../app/services/analytics.service';
 
 /**
  * Generated class for the ContactPage page.
@@ -14,11 +15,12 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+  private gaSvc:GoogleAnalyticsService) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactPage');
+    this.gaSvc.gaTrackPageEnter('Contact Page');
   }
 
 }

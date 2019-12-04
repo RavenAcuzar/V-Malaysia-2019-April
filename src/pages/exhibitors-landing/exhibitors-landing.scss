@@ -1,0 +1,24 @@
+page-exhibitors-landing {
+    button{
+        color: map-get($colors, secondary) !important;
+    }
+    .page-title-header::after{
+        background: none !important;
+    }
+    .avatar{
+        position: absolute;
+        bottom:-10vw;
+        top: auto!important;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 20vw;
+        height: 20vw;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 0 0 3px map-get($colors , btn ), 0 0 0 4px map-get($colors , primary ), 0 2px 5px 4px rgba(0,0,0,.2);
+        -moz-box-shadow: 0 0 0 3px map-get($colors , btn ), 0 0 0 4px map-get($colors , primary ), 0 2px 5px 4px rgba(0,0,0,.2);
+        box-shadow: 0 0 0 3px map-get($colors , btn ), 0 0 0 4px map-get($colors , primary ), 0 2px 5px 4px rgba(0,0,0,.2);
+    }
+}

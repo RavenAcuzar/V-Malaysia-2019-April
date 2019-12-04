@@ -1,6 +1,6 @@
 <ion-header no-border>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <button ion-button menuToggle color="secondary">
       <ion-icon name="menu"></ion-icon>
     </button>
   </ion-navbar>
@@ -8,7 +8,7 @@
 
 <ion-content no-padding no-bounce>
   <div class="home-bg">
-    <img src="./assets/imgs/home-bg.png" />
+    <img style="width: 100vw;" src="./assets/imgs/home-bg.png" />
     <div class="countdown" [hidden]="!hideCountdown">
       <h4>{{'HOME_PAGE.WELC' | translate}} </h4>
       <h5>{{'HOME_PAGE.DAY'| translate}} {{dayValue}}</h5>
@@ -59,16 +59,22 @@
   </div>
   <div style="background-color:rgb(245, 245, 245); display:inline-block; width:100vw;">
       <h5 style="color:#305D7F; font-size: 2.3vh; text-align:center;">{{'HOME_PAGE.NEWS_AND_UPDATES' | translate}}</h5>
-      <div style="padding:30px; padding-bottom: 1vh; padding-top:0;" *ngFor="let news of myNews">
-        <ion-card (click)="GoToNews(news.Title)">
-          <ion-item class="news-lbl">
-            <h3 [innerHTML]="news.localTitle"></h3>
-            <p>in {{news.SubCategory}}</p>
-          </ion-item>
-          <img [src]="news.ImageLink" />
-          <ion-card-content style="text-align:left; color:gray; font-size: 1.5vh;">
+      <div style="padding-bottom: 2vh; padding-top:0;" *ngFor="let news of myNews; let i = index;">
+          <ion-card style="width: 100% !important;margin: 0;">
+              <ion-item class="news-lbl">
+                <h3 [innerHTML]="news.LocalTitle"></h3>
+                <p>in {{news.SubCategory}}</p>
+                <button item-right ion-button icon-only (click)="removeToFaves(news, i)" clear class="fave-style" *ngIf="news.fave">
+                    <ion-icon name="md-star" style="color: rgba(3, 3, 3, 0.588);"></ion-icon>
+                  </button>
+                  <button item-right ion-button icon-only (click)="addToFaves(news, i)" clear class="fave-style" *ngIf="!news.fave">
+                      <ion-icon name="md-star-outline" style="color: rgba(3, 3, 3, 0.588);"></ion-icon>
+                    </button>
+              </ion-item>
+              <img [src]="news.ImageLink"  (click)="GoToNews(news.Title)"/>
+          <!-- <ion-card-content style="text-align:left; color:gray; font-size: 1.5vh;">
               {{news.CreatedOnDate}}
-          </ion-card-content>
+          </ion-card-content> -->
         </ion-card>
       </div>
   </div>

@@ -1,4 +1,14 @@
 page-home {
+    img{
+        filter: brightness(90%);
+    }
+    .fave-style{
+        height: 8vw !important;
+            width:8vw !important;
+            span{
+                font-size: 4vw;
+            }
+    }
     .home-bg{
         position: relative;
         z-index: 2;

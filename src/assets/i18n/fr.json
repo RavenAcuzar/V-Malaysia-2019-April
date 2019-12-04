@@ -1,63 +1,66 @@
 {
+    "SIDEMENU":{
+        "HOME":"ACCUEIL",
+        "DAILY_PROG":"PROGRAMME QUOTIDIEN",
+        "NEWS_UPS":"INFORMATIONS ET MISES À JOUR",
+        "MERCH":"PRODUITS V-MALAYSIA 2019",
+        "MARK":"FAITES VOTRE MARQUE V-MALAYSIA 2019",
+        "DOWNLOAD":"FONDS D'ÉCRAN V-MALAYSIA 2019 TÉLÉCHARGEABLES ",
+        "FAQS":"FAQ",
+        "CONTACT":"NOUS CONTACTER",
+        "SELECT_LANG":"SÉLECTIONNER UNE LANGUE",
+        "ASK_DATO":"Questionner Dato’",
+        "SURVEY":"Sondage quotidien",
+        "EXHIBITORS":"EXPOSANTS",
+        "FAVORITES":"FAVORIS",
+        "VMAL_FEED":"FLUX V-MALAYSIA 2019",
+        "NOTES":"NOTES"
+    },
     "HOME_PAGE":{
         "DAYS": "JOURS",
         "HOURS": "HEURES",
         "MINUTES":"MINUTES",
         "SECONDS":"SECONDES",
         "BTNS":{
-            "btn_1": "NOUS SOMMES UN",
+            "btn_1": "FAVORIS",
             "btn_2_sub": "Faites votre",
-            "btn_2": "marque V-Con",
-            "btn_3_sub": "FONDS D’ÉCRAN ",
-            "btn_3": "EXCLUSIFS DU #VCON18"
+            "btn_2": "marque V-Malaysia 2019",
+            "btn_3_sub": "FONDS D’ÉCRAN EXCLUSIFS DU",
+            "btn_3": "V-Malaysia 2019"
         },
-        "NEWS_AND_UPDATES": "ACTUALITÉS ET MISES À JOUR",
-        "WELC": "Bienvenue au V-Malaysia 2018!",
+        "NEWS_AND_UPDATES": "INFORMATIONS ET MISES À JOUR",
+        "WELC": "Bienvenue au V-Malaysia 2019!",
         "DAY": "JOUR"
     },
     "SCHED_PAGE":{
         "TITLE_H": "Programme quotidien",
         "CONTENT_1": "Surveillez cet espace pour le programme quotidien et les mises à jour!",
         "CONTENT_2": "Voyez ce qui se passe aujourd'hui!",
-        "CONTENT_3": "Assurez-vous d’être sur le lieu de l'événement pour voir les horaires du programme quotidien."
-    },
-    "ONE_PAGE":{
-        "TITLE": "NOUS SOMMES UN",
-        "CONTENT":{
-            "cnt_1": "Apprenez à connaître la famille. Entrez dans notre maison. Suivez l'appel.",
-            "cnt_2": "Le logo V-Con 2018 est principalement composé de trois couleurs différentes : vert, bleu et violet.",
-            "cnt_3": "Le vert est la couleur de la nature, de l'énergie et de la vie. Il est associé aux significations de la croissance, de l'harmonie et de l'environnement. On nous rappelle que la terre nous appartient tous de la même manière. Nous devons l’aimer et prendre soin d’elle comme elle a été entretenue et nous a inspiré par sa beauté au fil des ans. Cela alimente notre mission de reconnaître que notre planète est notre seule et unique maison.",
-            "cnt_4": "Alors que la couleur bleue symbolise la profondeur et la stabilité. En tant qu'entreprise qui existe depuis 20 ans, nous avons prouvé que nous avançons continuellement dans la direction de la force et de la sécurité. The V travaille avec confiance, loyauté, sagesse et vérité comme valeurs fondatrices.",
-            "cnt_5": "Le violet incarne le pouvoir, la noblesse, l'ambition et la richesse. Nous avons choisi de faire ce voyage parce que nous voulons atteindre la liberté financière et finalement, donner en retour en aidant les autres.",
-            "cnt_6": "Le mot “ONE” (UN) au centre est composé de trois lignes représentant les trois facettes du thème de cette année : One People. One Planet. One Purpose (Un peuple. Une planète. Un but).",
-            "cnt_7": "Hansief, la police choisie parle du caractère unique de The V. Elle est décrite comme police en gras sans serif avec de grandes textures remplies de caractères uniques.",
-            "cnt_8": "Enfin, le chiffre “1“ est composé de différents traits. Semblable à la synergie de The V, nous venons de différents pays, avec des systèmes de croyance et milieux différents, mais nous avançons ensemble vers un seul but, qui est de nous élever pour aider l'humanité.",
-            "cnt_9": "Dans un autre sens, le chiffre “1“ évoque aussi notre aspiration innée en tant qu'êtres humains à faire partie de quelque chose de grand, et en jouant le rôle que nous avons choisi de jouer, nous aspirons toujours à être au top et à être les meilleurs dans ce que nous faisons.",
-            "cnt_10": "Dans l'ensemble, le logo du V-Malaysia 2018 évoque la simplicité et l'intelligence. Alors que nous prévoyons le retour des rêveurs du 24 au 28 avril 2018, nous les accueillons à bras ouverts et avec un amour renouvelé pour la planète, l'appréciation de notre unité et la reconnaissance de notre seul but."
-        }
+        "CONTENT_3": "Assurez-vous d’être sur le lieu de l'événement pour voir les horaires du programme quotidien.",
+        "THANKS_FOR_PART":"Merci d'avoir participé!"
     },
     "NEWSLANDING_PAGE":{
-        "TITLE": "ACTUALITÉS ET MISES À JOUR",
-        "CONTENT": "LIRE. REGARDER. AFFICHER."
+        "TITLE": "INFORMATIONS ET MISES À JOUR",
+        "CONTENT": "LIRE. REGARDER. VOIR."
     },
     "NEWS_PAGE":{
-        "TITLE": "Les Actualités"
+        "TITLE": "INFORMATIONS"
     },
     "MERCH_PAGE":{
-        "CONTENT": "Visitez le stand, et mettez la main sur ces produits EXCLUSIFS du V-MALAYSIA 2018!",
-        "CONTENT_2": "Regardez cet espace pour voir les super produits du #VCON18 exclusivement disponibles au Stand de The V au V-Malaysia 2018!"
+        "CONTENT": "Soyez un canon avec la dernière collection des produits de The V exclusivement disponible au LIMITLESS STORE de The V!",
+        "CONTENT_2": "Surveillez cet espace pour voir les super produits du V-MALAYSIA 2019 disponible exclusivement au LIMITLESS store."
     },
     "MARK_PAGE":{
-        "TITLE": "Faites votre marque V-Con",
-        "CONTENT":"Marquez vos photos avec la magie du V-Con! Il vous suffit de télécharger votre photo et d'attendre l'image générée spécialement marquée d’un badge #VCON18!",
+        "TITLE": "Faites votre marque V-Malaysia 2019",
+        "CONTENT":"Scellez vos photos grâce à un badge spécial du V-Malaysia 2019! Il suffit de télécharger votre photo et d’attendre l'image générée. N'hésitez pas à les partager avec votre famille ou vos amis, ou à les publier sur le flux V-Malaysia 2019!",
         "BTN_DWN": "Télécharger",
-        "BTN_UP": "Envoyer la photo"
+        "BTN_UP": "Téléchargement photo"
     },
     "DOWN_PAGE":{
-        "TITLE": "FONDS D’ÉCRAN EXCLUSIFS DU #VCON18",
-        "CONTENT":"Emmenez la magie du V-Con partout où vous allez avec ces fonds d'écran téléchargeables GRATUITEMENT pour vos appareils mobiles!",
+        "TITLE": "FONDS D’ÉCRAN EXCLUSIFS DU V-MALAYSIA 2019",
+        "CONTENT":"Faites la différence avec vos appareils mobiles avec ces fonds d'écran téléchargeables!",
         "BTN":{
-            "btn_1": "TÉLÉCHARGER POUR TÉLÉPHONE MOBILE",
+            "btn_1": "TÉLÉCHARGER POUR TÉLÉPHONE PORTABLE",
             "btn_2": "TÉLÉCHARGER POUR TABLETTE"
         }
     },
@@ -65,54 +68,70 @@
         "TITLE": "Questions Fréquemment Posées",
         "QUESTIONS": {
             "Q1":"Comment puis-je acheter un billet?",
-            "Q2":"Quelles sont les modalités de paiement disponibles?",
+            "Q7":"Comment puis-je réclamer mon bracelet?",
+            "Q2":"Quelles sont les conditions de paiement disponibles?",
             "Q3":"Que faut-il apporter?",
-            "Q4":"Que dois-je préparer pour la demande de visa ?",
-            "Q5":"Y aura-t-il des billets à vendre le jour même de l'événement?",
-            "Q6":"Y aura-t-il des billets d'une seule journée d'événement disponibles?"
+            "Q4":"De quoi aurais-je besoin pour préparer une demande de visa?",
+            "Q5":"Y aura-t-il des billets en vente le jour même de l'événement?",
+            "Q6":"Y aura-t-il des billets d’une seule journée d'événement disponibles?"
         },
         "ANSWERS":{
-            "A1":"Vous pouvez acheter votre billet V-Malaysia 2018 via VShoppe ou aux comptoirs désignés pendant le jour d'inscription, le 23 avril 2018.",
-            "A2":"Actuellement, vous pouvez payer en espèces ou par carte de crédit (Visa et MasterCard)..",
+            "A1":"Vous pouvez acheter votre billet du V-Malaysia 2019 via VShoppe ou aux comptoirs désignés le jour d'inscription, le 22 avril 2019. ",
+            "A7":"Assurez-vous d’être personnellement présent le jour d’inscription pour réclamer votre bracelet. La collecte des bracelets / billets par une représentation ne sera pas acceptée et est fortement déconseillée. Il n'y aura pas de remboursement de nouveaux billets / bracelets après qu’ils aient été considérés comme reçus. Vous devez en acheter à nouveau en cas de perte ou de remplacement.",
+            "A2":"Actuellement, vous pouvez payer en espèces ou par carte de crédit (visa et MasterCard).",
             "A3":{
-                "A3-0":"Vous allez au V-Con? Voici les 5 choses importantes que vous devez apporter:",
-                "A3-1":"Lors de l'inscription, apportez une (1) pièce d'identité valide et une copie de la lettre de confirmation qui vous sera envoyée par courriel juste après l'achat de votre billet.",
-                "A3-2":"Ayez suffisamment d'argent de poche pour 5 jours, que vous pourrez dépenser pour la nourriture, la boisson, le transport, les produits du V-Con, les souvenirs, etc. Assurez-vous d'avoir votre argent en USD ou MYR.",
-                "A3-3":"De bons vêtements pour 5 jours. Assurez-vous d’apporter des chemises ou serviettes supplémentaires car il fait très chaud à Penang, en Malaisie à cette époque.",
-                "A3-4":"Prenez un appareil photo avec vous pour garder longtemps vos précieux souvenirs du V-Con et ayez quelque chose que vous pourrez montrer à votre famille et vos futurs prospects lorsque vous rentrerez chez vous.",
-                "A3-5":"Comme vous voulez savourer chaque session précieuse sur scène, assurez-vous d’apporter votre propre stylo et votre carnet pour une bonne prise de note!"
+                "A3-0":"Vous allez au V-Malaysia 2019? Voici les 5 choses importantes que vous devez apporter:",
+                "A3-1":"Pour l'inscription, apportez une (1) pièce d'identité valide et une copie de la lettre de confirmation qui vous sera envoyée par e-mail juste après l'achat de votre billet.",
+                "A3-2":"Prévoyez un budget suffisant pour argent de poche qui vous permettra de tenir pendant 5 jours. Assurez-vous d’avoir suffisamment d’argent à dépenser pour la nourriture, la boisson, le transport, les produits V-Malaysia 2019, les souvenirs, etc. Assurez-vous d'avoir votre argent en USD ou RM.",
+                "A3-3":"Ayez de bons vêtements pour 5 jours. Comme il fait très chaud à Penang, en Malaisie, à cette époque, attendez-vous à ce qu’il fasse encore plus froid avec la climatisation à l’intérieur de l’arène. Si vous avez facilement froid, apportez une veste ou un châle que vous pourrez facilement mettre sur vos vêtements confortables.",
+                "A3-4":"Prenez avec vous un appareil photo pour faire durer vos précieux souvenirs du V-Malaysia 2019. Téléchargez-les sur Faites votre marque V-Malaysia 2019 et publiez-les avec fierté dans le flux V-Malaysia 2019 pour pouvoir les partager avec les autres participants du V-Malaysia 2019 et vos futurs prospects quand vous retournerez chez vous.",
+                "A3-5":"Si vous voulez savourer chaque session précieuse sur scène, assurez-vous de prendre des notes en utilisant les Notes!"
             },
             "A4":{
-                "A4-1":"Passeport valide pour au moins 6 mois avant la date du voyage",
-                "A4-2":"Assurez-vous que votre passeport ait au moins trois pages vierges.",
-                "A4-3":"Pour la demande de VISA, mentionnez Visa de convention.",
+                "A4-1":"Passeport valide pour au moins 6 mois à compter de la date du voyage.",
+                "A4-2":"Assurez-vous que votre passeport ait au moins 3 pages vierges.",
+                "A4-3":"Pour la demande de VISA, mentionnez visa de Convention.",
                 "A4-4":"Tous les participants doivent avoir un minimum de 500 USD en espèces.",
-                "A4-5":"Tous les participants doivent avoir la confirmation de la réservation d'hôtel."
+                "A4-5":"Tous les participants doivent avoir la confirmation de réservation d'hôtel."
             },
-            "A5":"Oui. Seules les transactions effectuées en espèces et par carte de crédit seront prises en compte.",
-            "A6":"Non. Le programme de 5 jours que nous avons préparé pour vous est quelque chose auquel il faut assister du 1er au 5e jour pour une expérience complète qui change la vie. Il s'agit d'un événement complet et holistique avec une gamme d’activités riches en action très essentielles pour votre entreprise."
+            "A5":"Oui. Seules les transactions effectuées en espèces et par carte de crédit seront acceptées.",
+            "A6":"Non. Le programme de 5 jours que nous avons préparé pour vous est une chose qui doit être suivie du 1er au 5e jour afin d’avoir une expérience complète qui change la vie. Il s'agit d'un événement complet et holistique avec une gamme d'activités pleines d'actions très essentielles pour votre entreprise."
         }
     },
     "CONT_PAGE":{
         "TITLE":"NOUS CONTACTER",
-        "CONTENT":"Si vous rencontrez des difficultés à accéder à l’appli, ou si vous avez d'autres questions qui ne sont pas disponibles sur notre page FAQ, veuillez nous contacter par nos adresses e-mail suivantes.",
+        "CONTENT":"Si vous rencontrez des difficultés à accéder à l’appli ou si vous avez d'autres questions qui ne sont pas disponibles sur notre page FAQ, contactez-nous via les adresses e-mail suivantes.",
         "TECH_SUP": "Support technique:",
-        "CONT_TRAN":"Questions liées au contenu et à la traduction:",
-        "INQS": "Pour toute demande de renseignements:",
+        "CONT_TRAN":"Préoccupations relatives au contenu et à la traduction:",
+        "INQS": "Pour tout renseignement:",
         "LTS": "AIMER. TAGUER. PARTAGER",
         "FLLW": "NOUS SUIVRE!"
     },
     "CHLANG_PAGE":{
-        "ENGLISH":"ANGLAIS",
-        "BAHASA-INDONESIAN": "BAHASA-INDONÉSIEN",
+        "ENGLISH":"ENGLISH",
+        "BAHASA-INDONESIAN": "BAHASA-INDONESIA", 
         "FRENCH":"FRANÇAIS",
-        "RUSSIAN":"RUSSE",
-        "TURKISH": "TURC",
-        "ARABIC": "ARABE"  
+        "RUSSIAN":"РУССКИЙ",
+        "TURKISH": "TÜRKÇE", 
+        "ARABIC":"العربية"
     },
     "SPLASH_PAGE":{
-        "ONE": "UN.",
-        "EXP":"VOUS ÊTES LIÉ À L’EXPÉRIENCE DE TOUTE UNE VIE."
+        "ONE": "Bienvenue à la maison!",
+        "EXP":"Appuyer sur suivant pour voir l'incroyable voyage qui vous attend, rêveurs courageux!"
     },
-    "CHAT_VOLT":"Discuter avec Volt"
+    "SUBMIT_ANSWERS":"Envoyer vos réponses",
+    "SURVEY_MSG1":"Surveillez cet espace et répondez au sondage afin que nous puissions mieux vous servir.",
+    "SURVEY_MSG2":"Merci de répondre au sondage!",
+    "PROMOTION_BY":"Promotion par",
+    "FEED":"Flux",
+    "LIKES":"likes",
+    "MERCHANDISE":"Produits",
+    "COMMENTS":"commentaires",
+    "SHARE_YOUR_THOUGHTS":"Partager vos pensées...",
+    "CREATE_POST":"CRÉER UNE PUBLICATION",
+    "SHARE":"PARTAGER",
+    "ADD_PHOTOS":"Ajouter des photos",
+    "PHOTOS_MAX":"(Jusqu'à 3 photos)",
+    "ASKED_BY":"Demandé par:",
+    "SEND":"ENVOYER"
 }

@@ -1,0 +1,42 @@
+<!--
+  Generated template for the FeedPostingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+    <ion-navbar>
+        <button ion-button menuToggle color="secondary">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+      <ion-title>{{'CREATE_POST' | translate}}</ion-title>
+    <ion-buttons end>
+        <button ion-button color="secondary" (click)="postFeed()">
+          {{'SHARE' | translate}}
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content no-padding>
+    <ion-item no-lines style="padding: 16px;">
+        <h3><b>{{details.name}}</b></h3>
+        <p style="text-indent: 0;">{{details.irid}}</p>
+    </ion-item>
+    <textarea placeholder="{{'SHARE_YOUR_THOUGHTS' | translate}}" [(ngModel)]="message" maxlength="200"></textarea>
+    <ion-item no-lines>
+      <ion-icon item-left name="images"></ion-icon>
+        <h4>{{'ADD_PHOTOS'|translate}}</h4>
+        <p style="text-indent: 0; display: inline-block;">{{'PHOTOS_MAX'|translate}}</p>
+    </ion-item>
+    <ion-row>
+      <ion-col col-3 class="first-col" (click)="selectPhoto()">
+          <ion-icon name="add"></ion-icon>
+      </ion-col>
+      <ion-col style="height: 100%;" col-3 *ngFor="let img of selectedImgs">
+        <img style="object-fit: cover;height: 100%;width: 100%;" [src]="sanitizeUrl(img.imgSrc)"/>
+      </ion-col>
+    </ion-row>
+</ion-content>

@@ -1,1 +1,8 @@
 export const SQLITE_DB_NAME = 'data.db'
+export const LANGUAGE_KEY ='fadsa'
+export const HAS_ANSWERED_SURVEY = 'ddsajkfd'
+export const SURVEY_FORM_Q = 'fhdjas'
+export const ASK_DATO_DETAILS = 'dsbhajdfsa'
+export const IF_VOTED ='fdskads'
+export const MERCH_FAVES = 'fdbsjfsadb'
+export const INITIAL_DATE_LOAD = 'fdbsjkds'

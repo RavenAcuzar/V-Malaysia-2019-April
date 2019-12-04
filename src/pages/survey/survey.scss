@@ -1,0 +1,49 @@
+page-survey {
+    ion-title{
+        div{color:map-get($colors, secondary) !important;}
+    }
+    .background-splash{   
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../assets/imgs/bg-contact.jpg");
+        background-size: cover;
+        background-position: center center;
+        filter: brightness(82%);
+    }
+    .survey-cont{
+        background-color: rgba(255, 255, 255, 0.753);
+        color: map-get($colors, primary);
+        ion-list{
+            margin-bottom: 16px !important;
+            ion-item{
+                background-color: transparent !important;
+                color: map-get($colors, primary) !important;
+                padding-left: 8px !important;
+            }
+        }
+    }
+    ion-item.item-radio-checked{
+        ion-label{
+            color: #746b83 !important;
+        }
+        .radio-inner{
+            border-color: #746b83 !important;
+        }
+    }
+    .message{
+        h4{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            height: 44vw;
+            text-align: center;
+            width: 91vw;
+            font-size: 7vw;
+            font-weight: 300;
+            color: white;
+        }
+    }
+}

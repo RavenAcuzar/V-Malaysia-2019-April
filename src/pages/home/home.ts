@@ -2,12 +2,16 @@ import { Component } from '@angular/core';
 import { NavController, LoadingController, ToastController, Toast } from 'ionic-angular';
 import { DownloadsPage } from '../downloads/downloads';
 import { NewslandingPage } from '../newslanding/newslanding';
-import { WeAreOnePage } from '../we-are-one/we-are-one';
 import { MarkPage } from '../mark/mark';
 import { Http, RequestOptions, Headers, URLSearchParams } from '@angular/http';
 import { Subscription } from 'rxjs/Subscription';
 import { Observable } from 'rxjs/Rx';
-
+import { GoogleAnalyticsService } from '../../app/services/analytics.service';
+import { Storage } from '@ionic/storage';
+import { LANGUAGE_KEY } from '../../app/app.constants';
+import { FavoritesPage } from '../favorites/favorites';
+import { FavoritesService } from '../../app/services/favorites.service';
+ 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -21,6 +25,7 @@ export class HomePage {
   subscription: Subscription;
   _dateNow: Date;
   _VDate: Date;
+  _regDay:Date;
   dayValue: string;
   private isLeaving: boolean = false;
   myNews = [];
@@ -29,32 +34,39 @@ export class HomePage {
   constructor(public navCtrl: NavController,
     private loadingController: LoadingController,
     private toastCtrl: ToastController,
-    private http: Http) {
-
+    private http: Http,
+    private gaSvc:GoogleAnalyticsService,
+    private storage:Storage,
+    private favCtrl:FavoritesService) {
+      this.getNews();
 
   }
   ionViewDidEnter() {
-    this._VDate = new Date("2018-04-24T00:00:00+08:00");
+    this.gaSvc.gaTrackPageEnter('Home Page');
+    this._VDate = new Date("2019-04-23T00:00:00+08:00");
+    this._regDay= new Date("2019-04-22T00:00:00+08:00");
     this._dateNow = new Date();
-    if (this._dateNow >= this._VDate) {
+    if (this._dateNow >= this._regDay) {
       this.hideCountdown = true;
       this.checkDateValue();
       this.subscription.unsubscribe();
     }
     else
       this.countDown();
-    this.getNews();
+    
   }
   checkDateValue() {
-    if (this._dateNow.getMonth() === 3 && this._dateNow.getDate() === 24) {
+    if (this._dateNow.getMonth() + 1 === 4 && this._dateNow.getDate() === 22) {
+      this.dayValue = "Registration"
+    } else if (this._dateNow.getMonth() + 1 === 4 && this._dateNow.getDate() === 23) {
       this.dayValue = "1"
-    } else if (this._dateNow.getMonth() === 3 && this._dateNow.getDate() === 25) {
+    } else if (this._dateNow.getMonth() + 1 === 4 && this._dateNow.getDate() === 24) {
       this.dayValue = "2"
-    } else if (this._dateNow.getMonth() === 3 && this._dateNow.getDate() === 26) {
+    } else if (this._dateNow.getMonth() + 1 === 4 && this._dateNow.getDate() === 25) {
       this.dayValue = "3"
-    } else if (this._dateNow.getMonth() === 3 && this._dateNow.getDate() === 27) {
+    } else if (this._dateNow.getMonth() + 1 === 4 && this._dateNow.getDate() === 26) {
       this.dayValue = "4"
-    } else if (this._dateNow.getMonth() === 3 && this._dateNow.getDate() === 28) {
+    } else if (this._dateNow.getMonth() + 1 === 4 && this._dateNow.getDate() === 27) {
       this.dayValue = "5"
     } else {
       this.dayValue = " ";
@@ -74,7 +86,7 @@ export class HomePage {
     });;
   }
   GoToOne() {
-    this.navCtrl.setRoot(WeAreOnePage);
+    this.navCtrl.setRoot(FavoritesPage);
   }
   GoToMark() {
     this.navCtrl.setRoot(MarkPage);
@@ -85,26 +97,52 @@ export class HomePage {
       content: 'Verifying...'
     });
     loadingPopup.present();
-
-    let body = new URLSearchParams();
-    body.set('action', 'getOldsNews');
-    body.set('count', '4');
-    body.set('page', '1');
-    body.set('language', window.localStorage['mylanguage']);
-
-    let options = new RequestOptions({
-      headers: new Headers({
-        'Content-Type': 'application/x-www-form-urlencoded'
-      })
-    });
-    this.http.post('http://cums.the-v.net/site.aspx', body, options)
-      .timeout(20000)
-      .subscribe(response => {
-        try {
-          this.myNews = response.json();
-          loadingPopup.dismiss();
-        } catch (e) {
-          
+    this.storage.get(LANGUAGE_KEY).then(lang=>{
+      let body = new URLSearchParams();
+      body.set('action', 'getNews');
+      body.set('count', '4');
+      body.set('tag', 'V-Malaysia 2019');
+      body.set('language', lang);
+  
+      let options = new RequestOptions({
+        headers: new Headers({
+          'Content-Type': 'application/x-www-form-urlencoded'
+        })
+      });
+      this.http.post('http://bt.the-v.net/service/api.aspx', body, options)
+        .timeout(20000)
+        .subscribe(response => {
+          try {
+            //TODO: Map fave if added
+            let proms = response.json().map(e=>{
+              return this.favCtrl.checkIfFave(e.Id, 'News').then(val=>{
+                e.fave = val;
+                return e;
+              })
+           })
+           Promise.all(proms).then(val=>{
+            this.setValue(val);
+            //TODO: Map selected if favorite or not
+            console.log(val);
+           })
+            loadingPopup.dismiss();
+          } catch (e) {
+            
+            let toast = this.toastCtrl.create({
+              message: 'Something went wrong! Reload and Try again.',
+              position: 'bottom',
+              showCloseButton: true,
+              closeButtonText: 'Reload'
+            });
+            toast.onDidDismiss(() => {
+              if (!this.isLeaving)
+                this.getNews();
+            })
+            toast.present();
+            this.toastReload = toast;
+            loadingPopup.dismiss();
+          }
+        }, e => {
           let toast = this.toastCtrl.create({
             message: 'Something went wrong! Reload and Try again.',
             position: 'bottom',
@@ -118,23 +156,9 @@ export class HomePage {
           toast.present();
           this.toastReload = toast;
           loadingPopup.dismiss();
-        }
-      }, e => {
-        let toast = this.toastCtrl.create({
-          message: 'Something went wrong! Reload and Try again.',
-          position: 'bottom',
-          showCloseButton: true,
-          closeButtonText: 'Reload'
+        }, () => {
         });
-        toast.onDidDismiss(() => {
-          if (!this.isLeaving)
-            this.getNews();
-        })
-        toast.present();
-        this.toastReload = toast;
-        loadingPopup.dismiss();
-      }, () => {
-      });
+    })
   }
 
 
@@ -167,5 +191,25 @@ export class HomePage {
 
   getSeconds(t) {
     return Math.floor((t / 1000) % 60);
+  }
+
+  private setValue(value){
+    this.myNews = value;
+  }
+  //TODO: Favorite feature
+  addToFaves(item, index){
+    this.favCtrl.addFavorite(item,'News').then(added=>{
+      if(added){
+        this.myNews[index].fave = added;
+        //this.cd.markForCheck();
+      }
+    })
+  }
+  removeToFaves(item, index){
+    this.favCtrl.removeFavorite(item, 'News').then(removed=>{
+      if(removed){
+        this.myNews[index].fave = !removed;
+      }
+    })
   }
 }

@@ -1,0 +1,140 @@
+<!--
+  Generated template for the FavoritesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+  <ion-navbar>
+    <button ion-button menuToggle color="secondary">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'SIDEMENU.FAVORITES' | translate}}</ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="section" mode="md">
+      <ion-segment-button value="news">
+        {{'NEWS_PAGE.TITLE' | translate}}<!-- News has translation -->
+      </ion-segment-button>
+      <ion-segment-button value="feed">
+        {{'FEED' | translate}}
+      </ion-segment-button>
+      <ion-segment-button value="exhibitor">
+        {{'SIDEMENU.EXHIBITORS' | translate}}
+      </ion-segment-button>
+      <ion-segment-button value="merch">
+        {{'MERCHANDISE' | translate}}
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content no-padding>
+  <div [ngSwitch]="section">
+    <ion-list *ngSwitchCase="'news'">
+      <div class="no-items" *ngIf="newsFaves?.length == 0">
+        <ion-icon name="custom-no-list"></ion-icon>
+      </div>
+      <div *ngIf="newsFaves?.length > 0">
+        <div style="padding-bottom: 2vh; padding-top:0;" *ngFor="let news of newsFaves; let i = index;">
+          <ion-card style="width: 100% !important;margin: 0;">
+            <ion-item class="news-lbl">
+              <h3 [innerHTML]="news.LocalTitle"></h3>
+              <p>in {{news.SubCategory}}</p>
+              <button item-right ion-button icon-only (click)="removeFavorite(news, 'News')" clear class="fave-style">
+                <ion-icon name="md-star" style="color: rgba(3, 3, 3, 0.588);"></ion-icon>
+              </button>
+            </ion-item>
+            <img [src]="news.ImageLink" (click)="GoToNews(news.Title)" />
+          </ion-card>
+        </div>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'exhibitor'">
+      <div class="no-items" *ngIf="exhiFaves?.length == 0">
+        <ion-icon name="custom-no-list"></ion-icon>
+      </div>
+      <div *ngIf="exhiFaves?.length > 0">
+        <div style="padding-bottom: 2vh; padding-top:0;" *ngFor="let exi of exhiFaves; let i = index;">
+          <ion-card style="padding: 0;">
+            <img [src]="exi.imgSrc" style="width: 100%;background: #1f1d37;" (click)="goToExi(exi.Id)" />
+            <ion-item class="news-lbl">
+              <ion-avatar item-start>
+                <img [src]="exi.storeImgSrc" />
+              </ion-avatar>
+              <h3>{{exi.Title}}</h3>
+              <p style="text-indent: 0;">{{'PROMOTION_BY'|translate}} {{exi.store}}</p>
+              <button item-right ion-button icon-only (click)="removeFavorite(exi, 'Exhibitor')" clear class="fave-style">
+                <ion-icon name="md-star" style="color: rgba(3, 3, 3, 0.588);"></ion-icon>
+              </button>
+            </ion-item>
+          </ion-card>
+        </div>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'merch'">
+      <div class="no-items" *ngIf="merchFaves?.length == 0">
+        <ion-icon name="custom-no-list"></ion-icon>
+      </div>
+      <div *ngIf="merchFaves?.length > 0">
+        <div class="merch-cont" padding *ngFor="let merch of merchFaves; let i = index;">
+          <img [src]="merch.image" />
+          <div class="desc">
+            <h4 dir=ltr>{{merch.title}}</h4>
+            <p dir=ltr>{{merch.price}}</p>
+          </div>
+          <button ion-button icon-only (click)="removeFavorite(merch, 'Merch')" class="fav fave-style" clear>
+            <ion-icon name="md-star" style="color: rgba(3, 3, 3, 0.588);"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </ion-list>
+    <ion-list *ngSwitchCase="'feed'">
+      <div class="no-items" *ngIf="feedFaves?.length == 0">
+        <ion-icon name="custom-no-list"></ion-icon>
+      </div>
+      <div *ngIf="feedFaves?.length > 0">
+        <div style="padding-bottom: 2vh; padding-top:0;" *ngFor="let feed of feedFaves; let i = index;">
+          <ion-card class="feed-card">
+            <ion-item (click)="goToFeed(feed.Id)">
+              <h3><b>{{feed.name}}</b></h3>
+              <p style="text-indent: 0;">{{feed.irid}}</p>
+            </ion-item>
+            <div class="desc" (click)="goToFeed(feed.Id)" [innerHtml]="feed.message" *ngIf="feed.message != ''">
+            </div>
+            <img [src]="feed.images[0].imageLink" style="width: 100vw;" (click)="goToFeed(feed.Id)" *ngIf="feed.images?.length == 1" />
+            <ion-slides style="width: 100vw; background-color:#1D283F;" [pager]="true" (click)="goToFeed(feed.Id)" *ngIf="feed.images?.length > 1">
+              <ion-slide class="slide" *ngFor="let img of feed.images">
+                <img [src]="img.imageLink" style="width: 100vw;" />
+              </ion-slide>
+            </ion-slides>
+            <div style="padding: 3px 6px">
+              <button class="action-button" ion-button color="primary" clear (click)="addRemoveLike(feed.Id, feed.irid, i, 'like')"
+                *ngIf="!feed.isLiked">
+                <ion-icon name='custom-heart-outline'></ion-icon>
+              </button>
+              <button class="action-button" ion-button color="primary" clear (click)="addRemoveLike(feed.Id, feed.irid, i, 'unlike')"
+                *ngIf="feed.isLiked">
+                <ion-icon name='custom-heart'></ion-icon>
+              </button>
+              <button class="action-button" ion-button color="primary" clear (click)="goToFeed(feed.Id)">
+                <ion-icon name='custom-comment'></ion-icon>
+              </button>
+              <button class="action-button save-feed" ion-button color="primary" clear (click)="removeFavorite(feed, 'Feed')">
+                <ion-icon name='custom-save-full'></ion-icon>
+              </button>
+            </div>
+            <ion-card-content>
+              <p style="font-size: 3vw; display: inline-block;" *ngIf="feed.likes != '0'">{{feed.likes}} {{'LIKES'|translate}}</p>
+              <p style="font-size: 3vw; margin: 0 7px 2px; display: inline-block" *ngIf="feed.comments != '0'">{{feed.comments}}
+                {{'COMMENTS' | translate}}</p>
+              <p style="font-size: 2.5vw;color: #8e9093;">{{feed.CreatedOn}}</p>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-list>
+  </div>
+</ion-content>

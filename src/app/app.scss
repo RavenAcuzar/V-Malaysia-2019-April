@@ -14,6 +14,37 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+ion-icon {
+    &[class*="custom-"] {
+      mask-size: contain;
+      mask-position: 50% 50%;
+      mask-repeat: no-repeat;
+      background: currentColor;
+      width: 1em;
+      height: 1em;
+    }
+&[class*="custom-comment"] {
+    mask-image: url(../assets/imgs/comment.svg);
+  }   
+  &[class*="custom-heart"] {
+    mask-image: url(../assets/imgs/heart.svg);
+  }   
+  &[class*="custom-heart-outline"] {
+    mask-image: url(../assets/imgs/heart-outline.svg);
+  }   
+  &[class*="custom-save"] {
+    mask-image: url(../assets/imgs/save.svg);
+  }   
+  &[class*="custom-save-full"] {
+    mask-image: url(../assets/imgs/save-full.svg);
+  }   
+  &[class*="custom-no-list"] {
+    mask-image: url(../assets/imgs/no-list.svg);
+  }  
+  &[class*="custom-no-notes"] {
+    mask-image: url(../assets/imgs/no-notes.svg);
+  }   
+}   
 ion-header [class^="toolbar-background"] {
     background-color: transparent;
 }
@@ -21,7 +52,7 @@ ion-content {
     > div.scroll-content, > div.fixed-content {
         margin-top: 0 !important;
     }
-    background-color: #90419d !important;
+    background-color: #191630 !important;
 }
 .sidemenu{
     background: url('../assets/imgs/sidemenu-bg.jpg') no-repeat top left;
@@ -138,6 +169,7 @@ ion-content {
 .news-lbl{
     ion-label{
         white-space: normal;
+        overflow: visible;
         h3{
             color: #397D98;
             font-size: 2.1vh;
@@ -151,4 +183,31 @@ ion-content {
 a{
     color: white !important;
     text-decoration: none;
+}
+[class*=".bar-button-default"]{
+    color: white !important;
+}
+[dir="rtl"] .fav{ 
+    right: auto !important;
+    left: 6vw !important;
+}
+[dir="rtl"] .save-feed{
+    float: left !important;
+}
+.no-items{
+    width: 100vw;
+    height: 85vh; 
+    position: relative;
+    ion-icon{
+        position: absolute;
+        height: 30vw;
+        width: 30vw;
+        font-size: 30vw;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: rgba(255, 255,255, 0.3);
+    }
 }

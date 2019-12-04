@@ -1,40 +1,44 @@
 {
+    "SIDEMENU":{
+        "HOME":"HOME",
+        "DAILY_PROG":"DAILY PROGRAM SCHEDULE",
+        "WE_ARE_ONE":"WE ARE ONE",
+        "NEWS_UPS":"NEWS AND UPDATES",
+        "MERCH":"V-MALAYSIA 2019 MERCHANDISE",
+        "MARK":"MAKE YOUR V-MALAYSIA 2019 MARK",
+        "DOWNLOAD":"V-MALAYSIA 2019 WALLPAPERS",
+        "FAQS":"FAQs",
+        "CONTACT":"CONTACT US",
+        "SELECT_LANG":"SELECT LANGUAGE",
+        "ASK_DATO":"ASK DATO",
+        "SURVEY":"DAILY SURVEY",
+        "EXHIBITORS":"EXHIBITORS",
+        "FAVORITES":"FAVORITES",
+        "VMAL_FEED":"V-MALAYSIA 2019 FEED",
+        "NOTES":"NOTES"
+    },
     "HOME_PAGE":{
         "DAYS": "DAYS",
         "HOURS": "HOURS",
         "MINUTES":"MINUTES",
         "SECONDS":"SECONDS",
         "BTNS":{
-            "btn_1": "WE ARE ONE",
+            "btn_1": "FAVORITES",
             "btn_2_sub": "MAKE YOUR",
-            "btn_2": "V-Con Mark",
-            "btn_3_sub": "EXCLUSIVE V-Con 2018",
+            "btn_2": "V-MALAYSIA 2019 Mark",
+            "btn_3_sub": "EXCLUSIVE V-MALAYSIA 2019",
             "btn_3": "Wallpapers"
         },
         "NEWS_AND_UPDATES": "NEWS AND UPDATES",
-        "WELC": "Welcome to V-Malaysia 2018!",
+        "WELC": "Welcome to V-MALAYSIA 2019!",
         "DAY": "DAY"
     },
     "SCHED_PAGE":{
         "TITLE_H": "DAILY PROGRAM SCHEDULE",
-        "CONTENT_1": "Watch this space for program schedule and updates!",
-        "CONTENT_2": "See what’s up ahead for today!",
-        "CONTENT_3": "Make sure you’re at the event venue to see the daily program schedule."
-    },
-    "ONE_PAGE":{
-        "TITLE": "WE ARE ONE",
-        "CONTENT":{
-            "cnt_1": "Get to know the family. Enter our home. Follow the calling.",
-            "cnt_2": "The 2018 V-Con logo is mainly made up of three different colors: green, blue, and purple.",
-            "cnt_3": "Green is the color of nature, energy, and life. It is associated with meanings of growth, harmony, and environment. We are reminded that Earth belongs to us all equally. We should love, and take care of it the way it has nurtured and inspired us with its beauty over the years. This fuels our mission to recognize that our planet is our one and only home.",
-            "cnt_4": "While the color blue symbolizes depth and stability. As a business, which has been around for 20 years, we have proven that we are continuously moving towards the direction of strength and security. The V works with trust, loyalty, wisdom, and truth as its founding values.",
-            "cnt_5": "Purple embodies power, nobility, ambition and wealth. We chose to take this journey because we want to achieve financial freedom, and eventually give back by helping other people.",
-            "cnt_6": "The word “ONE” at the center is comprised of three lines representing the three facets of this year’s theme: One People. One Planet. One Purpose.",
-            "cnt_7": "Hansief, the chosen font speaks of The V’s uniqueness. It is described as a bold sans serif typeface featuring great textures filled with unique characters.",
-            "cnt_8": "Lastly, the figure “1” is made up of different strokes. Similar to The V’s synergy, we come from different countries, with different belief systems and backgrounds, yet we move as one towards a single purpose, which is to raise ourselves to help mankind.",
-            "cnt_9": "In another sense, the figure “1” also evokes our innate aspiration as humans to be part of something big, and in the process of playing the role we’ve chosen to take, we always aspire to be on top, to be the best in what we do.",
-            "cnt_10": "Overall the V-Malaysia 2018 logo evokes simplicity and intelligence. As we anticipate the homecoming of dreamers this April 24-28, 2018 we welcome them with open arms and renewed love for the planet, appreciation of our oneness, and recognition of our one purpose."
-        }
+        "CONTENT_1": "Stay tuned for daily program schedule and updates!",
+        "CONTENT_2": "Here’s what we got for you today!",
+        "CONTENT_3": "Make sure you’re at the event venue to see the daily program schedule.",
+        "THANKS_FOR_PART":"Thank you for participating!"
     },
     "NEWSLANDING_PAGE":{
         "TITLE": "NEWS AND UPDATES",
@@ -44,18 +48,18 @@
         "TITLE": "NEWS"
     },
     "MERCH_PAGE":{
-        "CONTENT": "Visit The Booth, and get your hands on these EXCLUSIVE V-MALAYSIA 2018 merchandise!",
-        "CONTENT_2": "Watch this space to see awesome #VCON18 merchandise exclusively available at The V Booth at V-Malaysia 2018!"
+        "CONTENT": "Be a stunner with the latest collection of V merchandise exclusively available at The V LIMITLESS STORE!",
+        "CONTENT_2": "Watch this space to see awesome V-MALAYSIA 2019 merchandise exclusively available at The LIMITLESS store."
     },
     "MARK_PAGE":{
-        "TITLE": "MAKE YOUR V-CON MARK",
-        "CONTENT":"Stamp your photos with the magic of V-Con! Simply upload your photo, and wait for the generated image especially marked with a #VCON18 badge!",
+        "TITLE": "MAKE YOUR V-MALAYSIA 2019 MARK",
+        "CONTENT":"Seal your photos with a special V-Malaysia 2019 badge! Simply upload your photo, and wait for the generated image. Feel free to share them with your family or friends, or post them on the V-Malaysia 2019 Feed!",
         "BTN_DWN": "Download",
         "BTN_UP": "Upload Photo"
     },
     "DOWN_PAGE":{
-        "TITLE": "EXCLUSIVE #VCON18 WALLPAPERS",
-        "CONTENT":"Bring the magic of V-Con wherever you go with these FREE downloadable wallpapers for your mobile devices!",
+        "TITLE": "EXCLUSIVE V-MALAYSIA 2019 WALLPAPERS",
+        "CONTENT":"Make your mobile devices stand out with these downloadable wallpapers!",
         "BTN":{
             "btn_1": "DOWNLOAD FOR MOBILE",
             "btn_2": "DOWNLOAD FOR TABLET"
@@ -65,6 +69,7 @@
         "TITLE": "Frequently Asked Questions",
         "QUESTIONS": {
             "Q1":"How do I purchase a ticket?",
+            "Q7":"How do I claim my wristband?",
             "Q2":"What are the available payment terms?",
             "Q3":"What to bring?",
             "Q4":"What would I need to prepare for visa application?",
@@ -72,15 +77,16 @@
             "Q6":"Will there be single-day event tickets available?"
         },
         "ANSWERS":{
-            "A1":"You can buy your V-Malaysia 2018 ticket via VShoppe or at designated counters during Registration Day, 23 April 2018.",
+            "A1":"You can buy your V-Malaysia 2019 ticket via VShoppe or at designated counters during Registration Day, 22 April 2019",
+            "A7":"Please make sure that you are personally present at the registration to claim your wristband. Collection of wristbands/tickets via representation will not be entertained and is strongly discouraged. There will be no issuance of a refund, a new ticket/wristband once they have been deemed collected. You are required to purchase again in cases of loss or replacement.",
             "A2":"Currently, you can pay with cash or credit card (Visa and MasterCard).",
             "A3":{
-                "A3-0":"Going to V-Con? Here are 5 important things you need to bring:",
-                "A3-1":"During registration, bring one (1) valid ID and copy of the confirmation letter that will be sent to you via email right after the purchase of your ticket.",
-                "A3-2":"Enougn pocket money to last for 5 days, which you may spend on food, drinks, transportation, V-Con merchandise, souvenirs, etc. Make sure to have your money either in USD or MYR.",
-                "A3-3":"Clothes good for 5 days. Make sure to bring extra shirts or towels as it is extra warm in Penang, Malaysia around this time.",
-                "A3-4":"Take a camera with you to make your precious V-Con Memories last, and have something you can show to your family and future prospects when you go back home.",
-                "A3-5":"As you want to savour every valuable session on stage, make sure to bring your own pen and notebook for some serious note-taking!"
+                "A3-0":"Going to V-Malaysia 2019? Here are 5 important things you need to bring:",
+                "A3-1":"For Registration, bring one (1) valid ID together with a copy of the confirmation letter that will be sent to your email right after the purchase of your ticket.",
+                "A3-2":"Allocate sufficient budget for pocket money that would sustain you for 5 days. Make sure you have enough to spend on food, drinks, transportation, V-Malaysia 2019 merchandise, souvenirs, etc. Make sure to have your money either in USD or RM.",
+                "A3-3":"Clothes good for 5 days. As it is extra warm in Penang, Malaysia around this time, expect that the air-condition inside the arena would be extra cool. If you easily feel cold, bring a jacket or shawl you can easily layer over your comfy clothes.",
+                "A3-4":"Take a phone camera with you to make your precious V-Malaysia 2019 memories last. Upload them on Make Your V-Malaysia 2019 mark, and proudly post them on the V-Malaysia 2019 feed so you can share with your fellow V-Malaysia 2019 participants and future prospects when you go back home.",
+                "A3-5":"As you want to savour every valuable session on stage, make sure to take down notes using the Notes!"
             },
             "A4":{
                 "A4-1":"Passport valid for at least 6 months from date of travel.",
@@ -104,15 +110,29 @@
     },
     "CHLANG_PAGE":{
         "ENGLISH":"ENGLISH",
-        "BAHASA-INDONESIAN": "BAHASA-INDONESIAN",
-        "FRENCH":"FRENCH",
-        "RUSSIAN":"RUSSIAN",
-        "TURKISH": "TURKISH", 
-        "ARABIC":"ARABIC" 
+        "BAHASA-INDONESIAN": "BAHASA-INDONESIA", 
+        "FRENCH":"FRANÇAIS",
+        "RUSSIAN":"РУССКИЙ",
+        "TURKISH": "TÜRKÇE", 
+        "ARABIC":"العربية"
     },
     "SPLASH_PAGE":{
-        "ONE": "ONE.",
-        "EXP":"YOU’RE BOUND FOR AN EXPERIENCE OF A LIFETIME."
+        "ONE": "Welcome Home!",
+        "EXP":"Tap ahead, and see the unbelievable journey ahead of you, brave dreamer!"
     },
-    "CHAT_VOLT":"CHAT WITH VOLT"
+    "SUBMIT_ANSWERS":"SUBMIT ANSWERS",
+    "SURVEY_MSG1":"Watch this space and answer the survey for us to serve you better.",
+    "SURVEY_MSG2":"Thank you for answering the survey!",
+    "PROMOTION_BY":"Promotion by",
+    "FEED":"Feed",
+    "LIKES":"likes",
+    "MERCHANDISE":"Merchandise",
+    "COMMENTS":"comments",
+    "SHARE_YOUR_THOUGHTS":"Share your thoughts...",
+    "CREATE_POST":"CREATE POST",
+    "SHARE":"SHARE",
+    "ADD_PHOTOS":"Add Photos",
+    "PHOTOS_MAX":"(Up to 3 photos)",
+    "ASKED_BY":"Asked by:",
+    "SEND":"SEND"
 }

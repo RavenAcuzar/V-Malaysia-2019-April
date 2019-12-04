@@ -1,0 +1,77 @@
+<ion-header no-border>
+
+  <ion-navbar>
+    <button ion-button menuToggle color="secondary">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'SIDEMENU.VMAL_FEED' | translate}}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="reEnter()" color="secondary" *ngIf="hasProfile">
+        <ion-icon name="ios-undo"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <div style="padding:0 !important;margin-top: 0px;">
+    <ion-row class="post-here" (click)="goToPosting()">
+      <ion-col col-10 class="post-desc">
+        <p>{{'SHARE_YOUR_THOUGHTS' | translate}}</p>
+      </ion-col>
+      <ion-col col-2 class="img-logo">
+        <ion-icon name="images"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <div class="no-items" *ngIf="feeds?.length == 0">
+      <ion-icon name="custom-no-list"></ion-icon>
+    </div>
+    <div *ngIf="feeds?.length > 0">
+      <ion-card *ngFor="let feed of feeds; let i = index;">
+        <ion-item (click)="goToFeed(feed.Id)">
+          <h3><b>{{feed.name}}</b></h3>
+          <p style="text-indent: 0;">{{feed.irid}}</p>
+        </ion-item>
+        <div class="desc" [innerHtml]="feed.message" (click)="goToFeed(feed.Id)" *ngIf="feed.message != ''"></div>
+        <img [src]="feed.images[0].imageLink" style="width: 100vw;" (click)="goToFeed(feed.Id)" *ngIf="feed.images?.length == 1" />
+        <ion-slides style="width: 100vw; background-color:#1D283F;" [pager]="true" (click)="goToFeed(feed.Id)" *ngIf="feed.images?.length > 1" [dir]="isRtl">
+          <ion-slide class="slide" *ngFor="let img of feed.images">
+            <img [src]="img.imageLink" style="width: 100vw;" />
+          </ion-slide>
+        </ion-slides>
+        <div style="padding: 3px 6px">
+          <button class="action-button" ion-button color="primary" clear (click)="addRemoveLike(feed.Id, feed.irid, i, 'like')"
+            *ngIf="!feed.isLiked">
+            <ion-icon name='custom-heart-outline'></ion-icon>
+          </button>
+          <button class="action-button" ion-button color="primary" clear (click)="addRemoveLike(feed.Id, feed.irid, i, 'unlike')"
+            *ngIf="feed.isLiked">
+            <ion-icon name='custom-heart'></ion-icon>
+          </button>
+          <button class="action-button" ion-button color="primary" clear (click)="goToFeed(feed.Id)">
+            <ion-icon name='custom-comment'></ion-icon>
+          </button>
+          <button class="action-button save-feed" ion-button color="primary" clear (click)="removeToFavorite(feed, i)"
+            *ngIf="feed.fave">
+            <ion-icon name='custom-save-full'></ion-icon>
+          </button>
+          <button class="action-button save-feed" ion-button color="primary" clear (click)="addToFavorite(feed, i)"
+            *ngIf="!feed.fave">
+            <ion-icon name='custom-save'></ion-icon>
+          </button>
+        </div>
+        <ion-card-content>
+          <p style="font-size: 3vw; display: inline-block;" *ngIf="feed.likes != '0'">{{feed.likes}} {{'LIKES'|translate}}</p>
+          <p style="font-size: 3vw; margin: 0 7px 2px; display: inline-block" *ngIf="feed.comments != '0'">{{feed.comments}}
+            {{'COMMENTS' | translate}}</p>
+          <p style="font-size: 2.5vw;color: #8e9093;">{{feed.CreatedOn}}</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </div>
+  </div>
+
+</ion-content>

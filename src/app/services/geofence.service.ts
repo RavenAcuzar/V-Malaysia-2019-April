@@ -25,21 +25,21 @@ export class GeofenceService {
     ) {
         this.intoFence = {
             id: GeofenceService.EVT_GEOFENCE_ID_IN,
-            latitude: 25.0513009,
-            longitude: 55.3179699,
+            latitude: 5.328349,
+            longitude: 100.280827,
             radius: 5000,
             transitionType: 1,
             notification: {
                 id: 1,
-                title: 'V-UAE #VCON17',
+                title: 'V-MALAYSIA #VMALAYSIA19',
                 text: `You can now view the schedule of the event!`,
                 openAppOnClick: true
             }
         }
         this.fromFence = {
             id: GeofenceService.EVT_GEOFENCE_ID_OUT,
-            latitude: 25.0513009,
-            longitude: 55.3179699,
+            latitude: 5.328349,
+            longitude: 100.280827,
             radius: 5000,
             transitionType: 2
         }

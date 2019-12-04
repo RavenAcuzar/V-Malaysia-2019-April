@@ -4,8 +4,16 @@ page-splash-next {
             background-color: transparent !important;
         }
         button{
-            color: map-get($colors, primary) !important;
+            color: map-get($colors, secondary) !important;
         }
+    }
+    .background-splash{   
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../assets/imgs/splash.jpg");
+        background-size: cover;
+        background-position: center center;
+        filter: brightness(82%);
     }
     .splash-cont{
         font-weight: 500;
@@ -14,12 +22,12 @@ page-splash-next {
         color: white;
         font-size: 4vw;
         position: absolute;
-        top: 4vh;
+        top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto;
-        height: 45vw;
-        width: 90vw;
+        height: 38vw;
+        width: 75vw;
     }
 }

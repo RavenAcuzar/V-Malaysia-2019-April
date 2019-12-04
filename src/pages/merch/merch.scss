@@ -5,10 +5,27 @@ page-merch {
             width: 100vw;
         }
     }
+    .fave-style{
+        height: 8vw !important;
+            width:8vw !important;
+            span{
+                font-size: 4vw;
+            }
+    }
     .merch-cont{
         position: relative;
-        >div{
-            background-color: #e65625;
+        .fav{
+            position: absolute;
+            top: 6vw;
+            right: 6vw;
+            button{
+                background-color: transparent !important;
+                color: #1D283F !important;
+                font-size: 5vh !important;
+            }
+        }
+        >.desc{
+            background-color: rgba(86, 52, 124, 0.747);
             position: absolute;
             bottom: 4vh;
             padding: 0 5vw 0 5vw;

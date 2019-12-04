@@ -1,0 +1,40 @@
+<!--
+  Generated template for the SurveyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <ion-navbar>
+    <button ion-button menuToggle color="secondary">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'SIDEMENU.SURVEY'|translate}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+  <div class="background-splash" ion-fixed style="z-index: 0;"></div>
+  <div style="margin-top: 60px;" *ngIf="viewContent">
+    <div padding class="survey-cont">
+      <div *ngFor="let questions of pollQuestions" style="border-bottom: solid 1px rgba(255,255,255,0.5); margin-top: 16px;">
+      <h5 [innerHTML]="questions.pollQuestion"></h5>
+      <ion-list radio-group [(ngModel)]="questions.answerID" no-lines>
+          <ion-item *ngFor="let answers of questions.answers">
+            <ion-label style="white-space: normal;overflow: visible;" [innerHTML]="answers.Answer"></ion-label>
+            <ion-radio value="{{answers.id}}"  color="light"></ion-radio>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+    <button ion-button full style="margin:0; height:16vw;" color="btn" (click)="submitPoll()">{{'SUBMIT_ANSWERS' | translate}}</button>
+  </div>
+  <div *ngIf="surveyNotAvailable" class="message">
+    <h4>{{'SURVEY_MSG1'|translate}}</h4>
+  </div>
+  <div *ngIf="hasAnswered" class="message">
+    <h4>{{'SURVEY_MSG2'|translate}}</h4>
+  </div>
+</ion-content>

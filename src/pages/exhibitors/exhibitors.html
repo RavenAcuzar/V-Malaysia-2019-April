@@ -1,0 +1,48 @@
+<!--
+  Generated template for the ExhibitorsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+  <ion-navbar>
+    <button ion-button menuToggle color="secondary">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+  <div ion-fixed style="z-index: 0;">
+    <img style="width:100vw; height:100%; position:cover;" src="./assets/imgs/bg-download.jpg" />
+  </div>
+  <div class="page-title-header news-h" style="height:15vh;">
+    <img src="./assets/imgs/faqs-header.jpg" style="height:15vh;" />
+    <h1 class="header-title" [class.arabic]="currentLang === 'ar'">{{'SIDEMENU.EXHIBITORS' | translate}}</h1>
+  </div>
+  <div class="page-content" style="min-height: 92.8vh;margin-top: 0;" padding>
+    <div class="no-items" *ngIf="newsFaves?.length == 0">
+      <ion-icon name="custom-no-list"></ion-icon>
+    </div>
+    <div *ngIf="ex?.length > 0">
+      <ion-card style="padding: 0;" *ngFor="let exi of ex; let i = index">
+        <img [src]="exi.imgSrc" style="width: 100%;background: #1f1d37;" (click)="goToEx(exi.Id)" />
+        <ion-item class="news-lbl">
+          <ion-avatar item-start>
+            <img [src]="exi.storeImgSrc" />
+          </ion-avatar>
+          <h3>{{exi.Title}}</h3>
+          <p style="text-indent: 0;">{{'PROMOTION_BY'|translate}} {{exi.store}}</p>
+          <button item-right ion-button icon-only (click)="removeToFaves(exi, i)" clear class="fave-style" *ngIf="exi.fave">
+            <ion-icon name="md-star" style="color: rgba(3, 3, 3, 0.588);"></ion-icon>
+          </button>
+          <button item-right ion-button icon-only (click)="addToFaves(exi, i)" clear class="fave-style" *ngIf="!exi.fave">
+            <ion-icon name="md-star-outline" style="color: rgba(3, 3, 3, 0.588);"></ion-icon>
+          </button>
+        </ion-item>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

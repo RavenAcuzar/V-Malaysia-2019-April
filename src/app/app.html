@@ -5,7 +5,7 @@
         <img style="width: 67%; margin: 12px 15.5%;" src="./assets/imgs/vcon-logo.png" />
         <ion-list no-lines>
           <button menuClose ion-item detail-none *ngFor="let p of pages" [class.activeHighlight]="checkActive(p)" (click)="openPage(p)">
-            {{p.title}}
+            {{p.title | translate}}
           </button>
         </ion-list>
         <div class="share-footer">

@@ -1,61 +1,64 @@
 {
+    "SIDEMENU":{
+        "HOME":"ANASAYFA",
+        "DAILY_PROG":"GÜNLÜK PROGRAM",
+        "NEWS_UPS":"HABERLER VE GÜNCELLEMELER",
+        "MERCH":"V-Malaysia 2019 ÜRÜNLERİ",
+        "MARK":"V-Malaysia 2019 İZİNİZİ OLUŞTURUN",
+        "DOWNLOAD":"İNDİRİLEBİLİR V-Malaysia 2019 DUVAR KAĞITLARI",
+        "FAQS":"SSS",
+        "CONTACT":"BİZİMLE İLETİŞİME GEÇİN                                              ",
+        "SELECT_LANG":"DİL SEÇİN",
+        "ASK_DATO":"Dato’ya sorun",
+        "SURVEY":"Günlük Anket",
+        "EXHIBITORS":"SERGİ AÇANLAR",
+        "FAVORITES":"FAVORİLER",
+        "VMAL_FEED":"V-Malaysia 2019 AKIŞI",
+        "NOTES":"NOTLAR"
+    },
     "HOME_PAGE":{
         "DAYS": "GÜNLER",
         "HOURS": "SAATLER",
         "MINUTES":"DAKİKALAR",
         "SECONDS":"SANİYELER",
         "BTNS":{
-            "btn_1": "BİZ BİRİZ",
-            "btn_2_sub": "V-Con İzini",
+            "btn_1": "FAVORİLER",
+            "btn_2_sub": "V-MALAYSIA 2019 İzini",
             "btn_2": "Oluştur",
-            "btn_3_sub": "ÖZEL # VCON18",
+            "btn_3_sub": "ÖZEL V-Malaysia 2019",
             "btn_3": "DUVAR KAĞITLARI"
         },
-        "NEWS_AND_UPDATES": "HABERLER & GÜNCELLEMELER",
-        "WELC": "V-Malaysia 2018'e hoşgeldiniz!",
+        "NEWS_AND_UPDATES": "HABERLER VE GÜNCELLEMELER",
+        "WELC": "V-Malaysia 2019'e hoşgeldiniz!",
         "DAY": "GÜN"
     },
     "SCHED_PAGE":{
-        "TITLE_H": "Günlük Program Akışı",
+        "TITLE_H": "Günlük Program",
         "CONTENT_1": "Günlük program ve güncellemeler için bu alanı kontrol edin!",
         "CONTENT_2": "Lihat apa yang ada untuk hari ini!",
-        "CONTENT_3": "Günlük programı görmek için etkinlik yerinde olduğunuzdan emin olun."
-    },
-    "ONE_PAGE":{
-        "TITLE": "BİZ BİRİZ",
-        "CONTENT":{
-            "cnt_1": "Aileyi tanıyın. Evimize girin. Çağrıyı takip edin.",
-            "cnt_2": "2018 V-Con logosu esas olarak üç farklı renkten oluşur: yeşil, mavi ve mor.Yeşil, doğanın, enerjinin ve yaşamın rengidir.",
-            "cnt_3": "Büyüme, uyum ve çevre anlamlarıyla ilişkilidir. Dünyamızın hepimize eşit olarak sahip olduğu hatırlatılıyor. Onu sevmeliyiz ve yıllarca güzelliği beslediği ve bize esin kaynağı olduğu için onunla ilgilenmeliyiz. Bu misyonumuz, gezegenimizin bizim tek ve biricik evimiz olduğunun farkına varmamıza yardımcı olur.",
-            "cnt_4": "Mavi renk derinliği ve kararlılığı sembolize eder. 20 yıldır süren bir iş olarak, sürekli güç ve güvenlik yönüne doğru ilerlediğimizi kanıtladık. V, kuruluş değeri olarak güven, sadakat, bilgelik ve gerçek ile çalışır. ",
-            "cnt_5": "Mor, güç, soyluluk, hırs ve serveti temsil eder. Bu yolculuğa çıkmayı seçtik çünkü maddi özgürlük elde etmek ve sonunda diğer insanlara yardım ederek bunu geri vermek istiyoruz.",
-            "cnt_6": "Ortadaki “ONE” (BİR) sözcüğü, bu yılki temanın üç yönünü temsil eden üç çizgiden oluşuyor: One People. One Planet. One Purpose (Bir Halk, Bir Gezegen, Bir Amaç).",
-            "cnt_7": "Hansief, seçilen font The V'nin benzersizliğini anlatıyor. Benzersiz karakterlerle dolu mükemmel dokulara sahip cesur bir sans serif yazı olarak tanımlanmaktadır.",
-            "cnt_8": "Son olarak, şekil ”1” farklı darbelerden oluşur. The V'nin sinerjisine benzer şekilde, farklı inanç sistemleri ve geçmişleri ile farklı ülkelerden geliyoruz, ancak bizler, insanlığa yardım etmek için kendimizi yükseltmek olan tek bir amaca doğru hareket ediyoruz.",
-            "cnt_9": "Bir başka deyişle, şekil ”1”, insanlar olarak doğuştan gelen özlemimizi de büyük bir şeyin bir parçası olmak için uyandırır ve götürmeyi seçtiğimiz rolü oynarken yaptığımız herşeyde her zaman zirvede olmayı ve en iyisi olmayı arzuluyoruz.",
-            "cnt_10": "Genel olarak, V-Malaysia 2018 logosu sadeliği ve zekayı çağrıştırıyor. 24-28 Nisan 2018'de hayalperestlerin buluşmalarını beklerken, onlara açtığımız kollarımızla ve gezegene yenilenen sevgiyle, birliğimizin takdir edilmesinde ve bir amacımızın farkında olarak onlara hoş geldiniz diyoruz."
-        }
+        "CONTENT_3": "Günlük programı görmek için etkinlik yerinde olduğunuzdan emin olun.",
+        "THANKS_FOR_PART":"Katıldığınız için teşekkürler!"
     },
     "NEWSLANDING_PAGE":{
-        "TITLE": "HABERLER & GÜNCELLEMELER",
+        "TITLE": "HABERLER VE GÜNCELLEMELER",
         "CONTENT": "OKU. İZLE. GÖRÜNTÜLE."
     },
     "NEWS_PAGE":{
         "TITLE": "HABERLER"
     },
     "MERCH_PAGE":{
-        "CONTENT": "Standı ziyaret edin ve ellerinizi bu SEÇKİN V-MALAYSIA 2018 ürünleriyle doldurun!",
-        "CONTENT_2": "V-Malaysia 2018'deki The V Standında bulunan harika # VCON18 ürünlerini görmek için bu alanı izleyin!"
+        "CONTENT": "The V LIMITLESS STORE’da özel olarak satılan en yeni V ürünlerine göz atın!",
+        "CONTENT_2": "Yalnızca LIMITLESS mağazasında mevcut olan müthiş V-MALAYSIA 2019 ürünlerini bu alandan takip edebilirsiniz."
     },
     "MARK_PAGE":{
-        "TITLE": "V-Con İzini Oluştur",
-        "CONTENT":"V-Con büyüsüyle fotoğraflarınızı damgalayın! Fotoğrafınızı yükleyin ve özellikle #VCON18 rozeti ile işaretlenerek oluşturulan resmi bekleyin!",
+        "TITLE": "V-Malaysia 2019 İzinizi Oluşturun",
+        "CONTENT":"Fotoğraflarınızı özel bir V-Malaysia 2019 rozeti ile mühürleyin! Fotoğrafınızı yükleyin ve oluşturulan görüntüyü bekleyin. Onları alieniz ve arkadaşlarınızla paylaşın veya V-Malaysia 2019 Feed’de yayınlayın!",
         "BTN_DWN": "İNDİR",
         "BTN_UP": "Fotoğraf yükle"
     },
     "DOWN_PAGE":{
-        "TITLE": "ÖZEL # VCON18 DUVAR KAĞITLARI",
-        "CONTENT":"Mobil aygıtlarınız için ÜCRETSİZ indirilebilir bu duvar kağıtlarıyla nereye giderseniz gidin V-Con büyüsünü taşıyın!",
+        "TITLE": "EXCLUSIVE V-Malaysia 2019 DUVAR KAĞITLARI",
+        "CONTENT":"Bu indirilebilir duvar kağıtlarıyla mobil cihazlarınızı ön plana çıkarın!",
         "BTN":{
             "btn_1": "MOBİL İÇİN İNDİR",
             "btn_2": "TABLET İÇİN İNDİR"
@@ -64,38 +67,40 @@
     "FAQ_PAGE":{
         "TITLE": "Sıkça Sorulan Sorular",
         "QUESTIONS": {
-            "Q1":"Nasıl bilet alabilirim?",
+            "Q1":"Nasıl bir bilet satın alabilirim?",
+            "Q7":"Bilekliğimi nasıl talep edebilirim?",
             "Q2":"Mevcut ödeme koşulları nelerdir?",
-            "Q3":"Neler Getirmelisin?",
-            "Q4":"Vize başvurusunda bulunmaya hazırlanmak için neye ihtiyacım olacak?",
-            "Q5":"Etkinliğin yapıldığı gün bilet satılacak mı?",
-            "Q6":"Tek günlük etkinlik biletleri var mı?"
+            "Q3":"Ne getirmeli?",
+            "Q4":"Vize başvurusu için ne yapmam gerekir?",
+            "Q5":"Etkinliğin gerçekleştiği gün bilet satılacak mı?",
+            "Q6":"Tek günlük etkinlik biletleri mevcut olacak mı?"
         },
         "ANSWERS":{
-            "A1":"23 Nisan 2018 Kayıt Günü boyunca V-Malaysia 2018 biletini VShoppe aracılığıyla veya belirlenen noktalarda satın alabilirsiniz.",
-            "A2":"Şu anda nakit veya kredi kartı ile (Visa ve MasterCard) ödeme yapabilirsiniz.",
+            "A1":"V-Malaysia 2019 biletinizi 22 Nisan 2019'da Kayıt Günü esnasında VShoppe veya belirtilen alanlarda satın alabilirsiniz.",
+            "A7":"Lütfen bilekliğinizi talep etmek için kayıtta bizzat bulunduğunuzdan emin olun. Temsili bir şekilde bileklik / bilet koleksiyonu verilmeyecek ve şiddetle geri çevrilecektir. Para iadesi yapılmayacak, tahsil edildikten sonra yeni bir bilet / bileklik verilmeyecektir. Kayıp veya değişim durumunda tekrar satın almanız gerekmektedir.",
+            "A2":"Şu anda nakit veya kredi kartı ile ödeme yapabilirsiniz (Visa ve MasterCard).",
             "A3":{
-                "A3-0":"V-Con'a mı gideceksiniz? Aşağıda, getirmeniz gereken 5 önemli şey var:",
-                "A3-1":"Kayıt sırasında, biletinizi aldıktan hemen sonra size e-posta yoluyla gönderilecek onay mektubunun kopyasını ve bir (1) geçerli kimliğinizi getirin.",
-                "A3-2":"Yiyecek, içecek, ulaşım, V-Con eşyaları, hediyelik eşyalar vb. için harcayabileceğiniz 5 gün için yeterli para. USD veya MYR olduğundan emin olun.",
-                "A3-3":"5 gün boyunca yetecek giysiler. Penang, Malezya'da bu zamanlarda ekstra sıcak olduğundan ekstra gömlek veya havlu getirdiğinizden emin olun.",
-                "A3-4":"Değerli V-Con anılarınızı en son haline getirmek için yanınıza bir fotoğraf makinesi alın ve eve döndüğünüzde ailenize ve gelecekteki kayıtlarınıza gösterebileceğiniz bir şeyleriniz olsun.",
-                "A3-5":"Sahnedeki değerli oturumların tadını çıkarırken, ciddi notlar almak için kendi kaleminizi ve defterinizi getirdiğinizden emin olun!"
+                "A3-0":"V-Malaysia 2019’a mı gidiyorsunuz? Getirmeniz gereken 5 önemli şey şunlardır: ",
+                "A3-1":"Kayıt için, biletinizi satın aldıktan sonra e-postanıza gönderilecek olan onay mektubunun bir kopyası ile birlikte bir (1) geçerli kimlik getirin.",
+                "A3-2":"Size 5 gün boyunca yetecek cep harçlığı için yeterli bütçeyi tahsis edin. Yiyecek, içecek, ulaşım, V-Malaysia 2019 ürünü, hediyelik eşya, vb. harcamaya yetecek kadar paranızın olduğundan emin olun. Paranızı USD veya RM cinsinden aldığınızdan emin olun.",
+                "A3-3":"5 gün için uygun kıyafetler. Bu dönemde Malezya'nın Penang kentinde ekstra sıcak olduğu için, arenadaki havalandırmalardan dolayı ekstra serin olmasını bekliyoruz. Eğer kolaylıkla üşüyorsanız, kıyafetlerinizin üzerine kolayca alabileceğiniz bir ceket veya şal getirin.",
+                "A3-4":"Değerli V-Malaysia 2019 anılarınızın son halini almak için yanınızda bir telefon kamerası bulundurun. V-Malaysia 2019 işaretinin üzerine yükleyin ve V-Malaysia 2019 feed bölümüne gururla ekleyin, böylece eve döndüğünüzde V-Malaysia 2019 katılımcılarınızla ve gelecek kayıtlarınızla paylaşabilirsiniz.",
+                "A3-5":"Her değerli oturumu sahnede görmek istediğinizden, Notes bölümünü kullanarak notlar aldığınızdan emin olun!"
             },
             "A4":{
-                "A4-1":"Seyahat tarihinden itibaren en az 6 ay geçerli pasaportunuz.",
-                "A4-2":"Pasaportunuzun en az 3 boş sayfaya sahip olduğundan emin olun.",
-                "A4-3":"VISA başvurusu için, vize şartlarını belirtin.",
-                "A4-4":"Tüm katılımcıların en az USD 500 nakit parası olması gerekir.",
-                "A4-5":"Tüm katılımcıların otel rezervasyon onayına sahip olmaları gerekir."
+                "A4-1":"Pasaport seyahat tarihinden itibaren en az 6 ay geçerli olmalıdır.",
+                "A4-2":"Pasaportun en az 3 boş sayfaya sahip olması gerekmektedir.",
+                "A4-3":"VISA başvurusu için kongre vizesini belirtin.",
+                "A4-4":"Tüm katılımcıların en az 500 ABD doları nakit parası olmalıdır.",
+                "A4-5":"Tüm katılımcılar otel rezervasyon onayına sahip olmalıdır."
             },
-            "A5":"Evet. Sadece nakit ve kredi kartı ile yapılan işlemler alınacaktır.",
-            "A6":"Hayır. Sizin için hazırladığımız 5 günlük program, yaşamı değiştirecek bir deneyim için 1. Gün'den 5. Gün'e kadar devam etmeniz gereken bir şeydir. Bu, işiniz için son derece gerekli olan, aksiyon dolu bir etkinlik grubuyla kapsamlı, bütüncül bir etkinliktir."
+            "A5":"Evet. Sadece nakit ve kredi kartı ile yapılan işlemler geçerli olacaktır.",
+            "A6":"Hayır. Sizin için hazırladığımız 5 günlük program, yaşamı değiştiren eksiksiz bir deneyim için 1. günden 5. güne kadar devam etmesi gereken bir şey. İşiniz için büyük önem taşıyan, eylemlerle dolu bir dizi etkinlik içeren kapsamlı, bütüncül bir etkinliktir."
         }
     },
     "CONT_PAGE":{
         "TITLE":"BİZİMLE İLETİŞİME GEÇİN",
-        "CONTENT":"Web sitemize erişmekte sorun yaşıyorsanız veya SSS sayfamızda bulunmayan başka sorularınız varsa lütfen aşağıdaki e-posta adreslerimiz aracılığıyla bizimle iletişime geçin.",
+        "CONTENT":"Uygulamaya erişim konusunda sorun yaşıyorsanız veya SSS sayfamızda bulunmayan başka sorularınız varsa, lütfen aşağıdaki e-posta adreslerimizden bize ulaşın.",
         "TECH_SUP": "Teknik Destek:",
         "CONT_TRAN":"İçerik ve Çeviri için:",
         "INQS": "Danışmak için:",
@@ -103,16 +108,30 @@
         "FLLW": "BİZİ TAKİP ET!"
     },
     "CHLANG_PAGE":{
-        "ENGLISH":"İNGİLİZCE",
-        "BAHASA-INDONESIAN": "BAHASA-ENDONEZCE",
-        "FRENCH":"FRANSIZCA",
-        "RUSSIAN":"RUSÇA",
-        "TURKISH": "TÜRKÇE",
-        "ARABIC": "ARAPÇA"  
+        "ENGLISH":"ENGLISH",
+        "BAHASA-INDONESIAN": "BAHASA-INDONESIA", 
+        "FRENCH":"FRANÇAIS",
+        "RUSSIAN":"РУССКИЙ",
+        "TURKISH": "TÜRKÇE", 
+        "ARABIC":"العربية"
     },
     "SPLASH_PAGE":{
-        "ONE": "BİR",
-        "EXP":"HAYATINIZI DEĞİŞTİRECEK DENEYİM SİZİ BEKLİYOR."
+        "ONE": "Eve Hoşgeldin!",
+        "EXP":"İleriye doğru git ve önündeki inanılmaz yolculuğu gör, cesur hayalperest!"
     },
-    "CHAT_VOLT":"Volt ile sohbet et"
+    "SUBMIT_ANSWERS":"Cevapları Gönderin",
+    "SURVEY_MSG1":"Bu alanı izleyin ve size daha iyi hizmet verebilmemiz için anketi yanıtlayın.",
+    "SURVEY_MSG2":"Anketi yanıtladığınız için teşekkür ederiz!",
+    "PROMOTION_BY":"Promosyon",
+    "FEED":"Akış",
+    "LIKES":"Beğeniler",
+    "MERCHANDISE":"Ürünler",
+    "COMMENTS":"Yorumlar",
+    "SHARE_YOUR_THOUGHTS":"Düşüncelerinizi Paylaşın...",
+    "CREATE_POST":"GÖNDERİ OLUŞTUR",
+    "SHARE":"PAYLAŞ",
+    "ADD_PHOTOS":"Fotoğraf Ekle",
+    "PHOTOS_MAX":"(3 fotoğrafa kadar)",
+    "ASKED_BY":"Soruldu:",
+    "SEND":"GÖNDER"
 }

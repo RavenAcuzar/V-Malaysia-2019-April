@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, Toast, LoadingController, ToastController } from 'ionic-angular';
 import { Http, Headers, RequestOptions, URLSearchParams } from '@angular/http';
+import { GoogleAnalyticsService } from '../../app/services/analytics.service';
+import { Storage } from '@ionic/storage';
+import { LANGUAGE_KEY } from '../../app/app.constants';
 
 /**
  * Generated class for the NewslandingPage page.
@@ -20,9 +23,12 @@ export class NewslandingPage {
   private isLeaving: Boolean=false;
   private toastReload: Toast;
   constructor(public navCtrl: NavController, public navParams: NavParams,
-  public http:Http, private loadingController:LoadingController, private toastCtrl: ToastController) {
-    this.currentLang = window.localStorage['mylanguage'];
+  public http:Http, private loadingController:LoadingController, private toastCtrl: ToastController,
+  private gaSvc:GoogleAnalyticsService, storage:Storage) {
+    storage.get(LANGUAGE_KEY).then(lang=>{
+    this.currentLang = lang;
     this.getNewsView();
+  })
   }
 
   ionViewDidLeave(){ 
@@ -43,7 +49,7 @@ export class NewslandingPage {
     let body = new URLSearchParams();
     body.set('action', 'getNews');
     body.set('URL', encodeURIComponent(this.id));
-    body.set('language', window.localStorage['mylanguage']);
+    body.set('language', this.currentLang);
 
     let options = new RequestOptions({
       headers: new Headers({
@@ -74,7 +80,7 @@ export class NewslandingPage {
       });
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad NewslandingPage');
+    this.gaSvc.gaTrackPageEnter('News Page');
   }
   
 

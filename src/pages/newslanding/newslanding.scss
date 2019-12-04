@@ -19,6 +19,9 @@ page-newslanding {
     .header-title{
         letter-spacing: 6px; 
     }
+    button{
+        color: map-get($colors, secondary) !important;
+    }
     .header-title.arabic{
         letter-spacing: 0 !important;
     }

@@ -1,0 +1,63 @@
+page-notes {
+    .news-h{
+        h1{
+            top: 0;
+            bottom: 0;
+        }
+    }
+    .news-h::after{
+        margin-top: 0.5vh;
+        height: 14.5vh;
+    }
+    .news-date{
+        text-align: center;
+        text-indent: 0;
+        font-size: 11px;
+        padding-bottom: 2vh;
+        color: #656565;
+    }
+    .header-title{
+        letter-spacing: 6px; 
+    }
+    button{
+        color: map-get($colors, secondary) !important;
+    }
+    .header-title.arabic{
+        letter-spacing: 0 !important;
+    }
+    .notes{
+        background: rgba(255, 255, 255, 0.7098039215686275);
+        padding: 2vh 4vh;
+        text-align: left !important;
+        position: relative;
+        margin-bottom: 5px;
+        h4{
+            padding: 0;
+            text-align: left;
+        }
+        p{
+            padding: 0;
+            text-indent: 0;
+            margin: 0;
+            font-size: 2vh;
+            color: rgba(177, 70, 151, 0.63);
+        }
+        ion-icon{
+            font-size: 3vh;
+            position: absolute;
+            right: 5vw;
+            top: 0;
+            bottom: 0;
+            height: fit-content;
+            margin: auto;
+        }
+
+    }
+    ion-fab{
+        ion-icon{
+            font-weight: 900 !important;
+            font-size: 3rem !important;
+        }
+    }
+
+}
